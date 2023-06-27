@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en", lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Giorgio DevSpace</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="styleweb.css">
+        <link rel="stylesheet" href="normalize.css">
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <meta name="author" content="Giorgio Santi aka zzF"/>
+        <meta name="description" content="My biography, portfolio and experience of my career."/>
+        <meta name="keywords" content="develop, development, portfolio, software, fullstack, apps"/>
+    </head>
+    <body>
+        <div class="bg-div">
+
+            <header class="nav-header">
+                <nav class="nav-container">
+                    <div class="icon-family">
+                        <div class="house-icon">
+                            <img src="house-icon.png" alt="Icono de casa">
+                        </div>
+                        <h1>Giorgio's Home</h1>
+                    </div>
+                    <ul class="nav-links-box">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#footer">About Me</a></li>
+                    </ul>
+                    <div class="dark-mode-container">
+                        <p>
+                            Dark Mode
+                        </p>
+                        <label class="dark-mode-box">
+                            <input onclick="imprimir()" type="checkbox" class="set-dark-mode">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </nav>
+            </header>
+            <section class="wrapper">
+                <aside class="personal-info-box">
+                    <div class="box-styler">
+                        <div class="personal-title">    
+                            <h2>Giorgio Santi</h2>
+                            <h3>Junior Developer</h3>
+                        </div>
+                        <div class="image-portrait">
+                            <img src="giorgioo.png" alt="Image portrait of Giorgio Santi">
+                        </div>
+                    </div>
+                </aside>
+                <section class="home" id="home">
+                    <div class="home-container">
+                        <h1> Apasionado de la tecnologia, buscando nuevos horizontes y metas
+                            las cuales superar. Alguien exigente y proactivo.
+                        </h1>
+                    </div>
+                </section>
+                <section class="portfolio" id="portfolio">
+                    <div class="portfolio-container">
+                        <h1>Proyectos realizados</h1>
+                        <article>
+                            <h2>Mi primer proyecto!</h2>
+                            <h3>Este fue un proyecto en Pyhton realizado en equipo!</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, assumenda?</p>
+                        </article>
+                        <article>
+                            <h2>Mi segundo proyecto!</h2>
+                            <h3>Este fue un proyecto en C# realizado en equipo!</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, repudiandae.</p>
+                        </article>
+                        <article>
+                            <h2>Mi tercer proyecto!</h2>
+                            <h3>Este fue un proyecto escrito en HTML, CSS y JS realizado de forma individual</h3>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo, repudiandae.</p>
+                        </article>
+                    </div>
+                    </section>
+            </section>
+            <footer class="footer-box" id="footer">
+                <div class="footer-button-box">
+                    <button onclick="imprimir()" class="footer-button">Contactame</button>
+                </div>
+                <div class="copyright-text">
+                    <p>Todos los derechos reservados. 2023-2023.
+                        Autoria: Giorgio S.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
