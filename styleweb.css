@@ -12,6 +12,8 @@
     --button-color: #000000;
     --button-text: #FFFFFF;
     --alt-text: #FF7F50;
+    --shadow-color: #FF9E9E;
+    --shadow-color-light: white;
 }
 
 h1{
@@ -37,6 +39,8 @@ h1{
     --button-color: #FFFFFF;
     --button-text: #000000;
     --alt-text: #FFFF00;
+    --shadow-color: #006161;
+    --shadow-color-light: white;
 }
 
 
@@ -188,9 +192,12 @@ body .bg-div {
     display: flex;
     position: fixed;
     flex-direction: column;
-    width: 22%;
+    width: 30%;
     margin-left: 1%;
+    margin-top: 1%;
     justify-content: center;
+    min-width: 190px;
+    z-index: 100;
 }
 
 .personal-info-box .box-styler{
@@ -216,27 +223,67 @@ body .bg-div {
 
 .personal-info-box .box-styler .image-portrait{
     display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
+    justify-content: left;
+    margin-left: 15px;
 }
 
 .personal-info-box .box-styler .image-portrait img{
-    height: 150px;
-    width: 150px;
-    border-radius: 150px;
-    border: 2px solid var(--alt-text);
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    border: 1px solid var(--alt-text);
 
 }
+
+.personal-info-box .box-styler .personal-info p{
+    margin: 0px 0px 0px 0px;
+}
+
 .home{
-    height: 700px;
+    height: 750px;
     background-color: var(--primary-background);
+    box-sizing: border-box;
 }
 
 .home-container{
     position: absolute;
     color:var(--primary-color);
     right: 10px;
-    width: 75%;
+    width: 65%;
+    animation: neon 3s infinite;
+}
+.home-container h1{
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    text-align: center;
+}
+
+.bubbles-container{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+.bubbles-container span{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    background: aqua;
+    margin: 0 6px;
+    border-radius: 50%;
+    box-shadow: 0 0 9px 9px #A5D6FA,
+    0 0 40px #6ac9f2, 0 0 100px #6ac9f2;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(120s / var(--i));
+}
+
+.bubbles-container span:nth-child(even){
+    background: #560860;
+    box-shadow: 0 0 9px 9px #57822f,
+    0 0 30px #18c950, 0 0 80px #18c950;
 }
 
 .portfolio{
@@ -248,7 +295,7 @@ body .bg-div {
 .portfolio .portfolio-container{
     position: absolute;
     right: 10px;
-    width: 75%;
+    width: 65%;
 }
 
 .portfolio h1{
@@ -315,9 +362,21 @@ body .bg-div {
     cursor: pointer;
 }
 
+@keyframes animate {
+    0%
+    {
+        transform: translateY(100vh) scale(0);
+    }
+    100%
+    {
+        transform: translateY(-5vh) scale(1);
+    }
+}
+
+
 /* media query for stretch dispositives less than 660px of width */
 
-@media (max-width: 660px){
+@media (max-width: 800px){
     nav
     {
         height: 50px;
@@ -335,19 +394,17 @@ body .bg-div {
         width: 30px;
     }
 
-    .nav-links-box{
-        font-size: 1.8em;
+    .nav-container .nav-links-box{
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        list-style-type: none;
+        font-size: 1.4em;
+        margin: 0px;
+        padding-inline-start: 0px;
     }
 
     .nav-links-box li a{
         padding-inline-end: 8px;
     }
-    
-    .dark-mode-box{
-        font-size: 1.3em;
-        right: 15px;
-    }
-
-    
-
 }
