@@ -1,2 +1,2 @@
 # My-Website
-This is a personal website made by myself, maked to show my habilities and my achivements.
+This is a personal website I made by myself, created to show my abilities and my achievements.
