@@ -197,6 +197,7 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     overflow: hidden;
+    align-items: center;
     width: 100%;
     height: 400px;
     background-color: var(--terciary-background);
@@ -206,12 +207,12 @@ body .bg-div {
 
 .personal-info-box .box-styler .personal-title h2{
     color: var(--alt-text);
-    margin: 0px 0px 6px 20px;
+    margin: 0px 0px 6px 0px;
 }
 
 .personal-info-box .box-styler .personal-title h3{
     color: var(--alt-text);
-    margin: 0px 0px 15px 40px;
+    margin: 0px 0px 15px 20px;
 }
 
 .personal-info-box .box-styler .image-portrait{
@@ -242,14 +243,14 @@ body .bg-div {
 .section-separator .section-separator-line {
     display: relative;
     width: 100%;
-    height: 0.2em;
+    height: 0.5em;
     background-color: var(--terciary-background);
 }
 
 .section-separator .section-scroll-progress {
     display: relative;
     width: 0%;
-    height: 0.2em;
+    height: 0.5em;
     background-color: var(--terciary-background_inverted);
 }
 
@@ -393,6 +394,19 @@ body .bg-div {
     {
         transform: translateY(-5vh) scale(1);
     }
+}
+
+
+.home-container h1{
+    animation:text-shadow-pop-br 3s infinite alternate backwards
+}
+
+@keyframes text-shadow-pop-br{
+    0%{text-shadow:0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555,0 0 #555;
+        transform:translateX(0) translateY(0)}100%{
+            text-shadow:1px 1px #555,2px 2px #555,3px 3px #555,4px 4px #555,5px 5px #555,6px 6px #555,7px 7px #555,8px 8px #555;
+            transform:translateX(-10px) translateY(-10px)
+        }
 }
 
 
