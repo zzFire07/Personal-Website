@@ -1,7 +1,7 @@
 # My-Website
 This is a personal website I made by myself, created to show my abilities and my achievements.
 
-This website is static. Made with HTML, CSS and JavaScript.
+This website is static. Made with pure HTML, pure CSS and pure JavaScript.
 
 ## How to run
 
