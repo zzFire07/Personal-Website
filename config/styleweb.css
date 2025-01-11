@@ -1,5 +1,6 @@
 *, :after,:before {
     box-sizing: border-box;
+    transition: 0.2s ease-in-out;
 }
 
 :root{
@@ -14,10 +15,6 @@
     --alt-text: #FF7F50;
     --shadow-color: #FF9E9E;
     --shadow-color-light: white;
-}
-
-h1{
-    margin: 0em;
 }
 
 [tema="dark"]{
@@ -50,6 +47,51 @@ body .bg-div {
     overflow:hidden;
 }
 
+.nav-hamburger-box {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.hamburger-line{
+    height: 5px;
+    width: 100%;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s ease-in-out;
+}
+
+.nav-hamburger-box .hamburger-line:nth-child(1){
+    top: 25%;
+}
+
+.nav-hamburger-box .hamburger-line:nth-child(3){
+    top: 75%;
+}
+
+.nav-hamburger-box.active .hamburger-line:nth-child(1){
+    position: absolute;
+    top: 89%;
+    transform: rotate(45deg) translate(-50%, -50%);
+    left: 35%;
+}
+
+.nav-hamburger-box.active .hamburger-line:nth-child(2){
+    opacity: 0;
+}
+
+.nav-hamburger-box.active .hamburger-line:nth-child(3){
+    position: absolute;
+    top: 11%;
+    transform: rotate(-45deg) translate(-50%, 50%);
+    left: 35%;
+}
 
 .nav-container
 {
@@ -83,6 +125,12 @@ body .bg-div {
     height: 60px;
     width: 60px;
     font-size: 1.5em;
+}
+
+.nav-container .hamburger-menu {
+    position: relative;
+    display: flex;
+
 }
 
 .nav-container .nav-links-box{
@@ -264,7 +312,7 @@ body .bg-div {
 .home-container{
     position: absolute;
     color:var(--primary-color);
-    right: 10px;
+    right: 20px;
     width: 65%;
     animation: neon 3s infinite;
 }
@@ -410,7 +458,7 @@ body .bg-div {
 }
 
 
-/* media query for stretch dispositives less than 660px of width */
+/* media query for stretch dispositives less than 800px of width */
 
 @media (max-width: 800px){
     .nav-container
@@ -436,10 +484,22 @@ body .bg-div {
         min-height: 20px;
     }
 
+    .nav-container .nav-hamburger-box{
+        display: block;
+    }
+
     .nav-container .nav-links-box{
+        display: none;
+    }
+
+    .nav-container .hamburger-menu{
+        left: -50px;
+    }
+
+    .nav-container .nav-link-box.active{
         display: flex;
         flex-direction: column;
-        align-items: right;
+        align-items: left;
         list-style-type: none;
         font-size: 1.4em;
         margin: 0px;
@@ -454,5 +514,13 @@ body .bg-div {
         width: 60px;
         height: 34px;
         position: relative;
+    }
+
+    .home-container {
+        width: 40%;
+    }
+
+    .home-container h1{
+        font-size: 1.4em;
     }
 }

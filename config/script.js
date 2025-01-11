@@ -10,15 +10,17 @@ document.addEventListener('DOMContentLoaded', function() {
     bigDiv = document.querySelector('.bg-div'); // Selecciono el div que contiene todo el contenido de la pagina
 
 
+    hamburgerBox = document.querySelector('.nav-hamburger-box'); // Selecciono la caja con el menu hamburguesa
+    hamburgerMenu = document.querySelector('.hamburger-menu'); // Selecciono el menu hamburguesa
+
     sectionSeparator = document.querySelectorAll('.section-scroll-progress'); // Selecciono todos los separadores de secciones
     window.addEventListener('scroll', movimientoSectionSeparator) // utilizo la funcion de movimiento junto con el scroll de la pagina
-});
-    
+    hamburgerBox.addEventListener('click', activarHamburgesa ); // Si se presiona el boton de menu hamburguesa, se cambia la clase del menu
+})
+
+
+
 var colorSwitch; // Variable para el interruptor DARK MODE
-    
-    function imprimir() { // Para uso de debug
-        console.log("");
-    }
 
     // Esta funcion cambia el tema del documento, entre un tema claro y uno obscuro.
     function cambiaTema(ev) { // Se utiliza el evento de "change" del boton como parametro
@@ -54,11 +56,15 @@ var colorSwitch; // Variable para el interruptor DARK MODE
 
         var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
 
-        var bgDivHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura del div que contiene todo el contenido de la pagina
+        var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
         sectionSeparator.forEach(function(element) { // Para cada separador de seccion, se cambia el ancho del elemento
-          element.style.width = (scrollPosition / bgDivHeight * 170) + '%';
+          element.style.width = (scrollPosition / webHeight * 170) + '%';
         });
     }
   
+    function activarHamburgesa() {
+      hamburgerMenu.classList.toggle('active');
+      hamburgerBox.classList.toggle('active');
+    }
     
