@@ -123,6 +123,7 @@ body .bg-div {
 .nav-container .icon-family .house-icon{
     display: flex;
     height: 5vw;
+    width: 5vw;
 }
 
 .nav-container .hamburger-menu {
@@ -506,6 +507,7 @@ body .bg-div {
 
     .nav-container .icon-family .house-icon{
         height: 10vw;
+        width: 10vw;
     }
 
     .nav-container .nav-link-box.active{
