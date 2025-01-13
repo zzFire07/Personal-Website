@@ -500,14 +500,14 @@ body .bg-div {
     }
 
     .nav-container .icon-family h1{
-        font-size: 9vw;
+        font-size: 8vw;
         margin-inline-start: 2vw;
-        margin-inline-end: 4vw;
+        margin-inline-end: 3vw;
     }
 
     .nav-container .icon-family .house-icon{
-        height: 10vw;
-        width: 10vw;
+        height: 9vw;
+        width: 9vw;
     }
 
     .nav-container .nav-link-box.active{
