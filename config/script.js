@@ -59,7 +59,7 @@ var colorSwitch; // Variable para el interruptor DARK MODE
         var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
         sectionSeparator.forEach(function(element) { // Para cada separador de seccion, se cambia el ancho del elemento
-          element.style.width = (scrollPosition / webHeight * 170) + '%';
+          element.style.width = ((scrollPosition / webHeight * 170) * 1.1) + '%';
         });
     }
   
