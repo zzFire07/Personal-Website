@@ -49,8 +49,8 @@ body .bg-div {
 
 .nav-hamburger-box {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 2rem;
+    height: 2rem;
     cursor: pointer;
     display: none;
 }
@@ -102,7 +102,7 @@ body .bg-div {
     white-space: nowrap;
     height: 70px;
     background-color: var(--secondary-background);
-    font-size: 15px;
+    font-size: 1vw;
 }
 
 .nav-container .icon-family{
@@ -113,18 +113,16 @@ body .bg-div {
 
 .nav-container .icon-family h1{
     font-family: var(--nav_title-font);
-    font-size: 2.5em;
-    margin-inline-start: 10px;
-    margin-inline-end: 35px;
+    font-size: 5vw;
+    margin-inline-start: 1vw;
+    margin-inline-end: 2vw;
     color: var(--primary-color);
     cursor: default;
 }
 
 .nav-container .icon-family .house-icon{
     display: flex;
-    height: 60px;
-    width: 60px;
-    font-size: 1.5em;
+    height: 5vw;
 }
 
 .nav-container .hamburger-menu {
@@ -137,7 +135,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 2em;
+    font-size: 4vw;
     margin: 0px;
     padding-inline-start: 0px;
     list-style-type: none;
@@ -154,8 +152,8 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    right: 25px;
-    font-size: 1.5em;
+    right: 2vw;
+    font-size: 2vw;
 }
 
 .nav-container .dark-mode-container p{
@@ -239,6 +237,11 @@ body .bg-div {
     justify-content: center;
     min-width: 190px;
     z-index: 100;
+    transition: none;
+}
+
+.personal-info-box *{
+    transition: none;
 }
 
 .personal-info-box .box-styler{
@@ -283,9 +286,14 @@ body .bg-div {
 
 
 .section-separator{
+    transition: none;
     margin: 0px;
     padding: 0px;
     border: 0px;
+}
+
+.section-separator *{
+    transition: none;
 }
 
 .section-separator .section-separator-line {
@@ -317,6 +325,7 @@ body .bg-div {
     animation: neon 3s infinite;
 }
 .home-container h1{
+    contain: content;
     text-transform: uppercase;
     font-family: "Archivo Black", "Archivo", sans-serif;
     font-weight: normal;
@@ -368,7 +377,7 @@ body .bg-div {
 
 .portfolio .portfolio-container h1{
     text-align: center;
-    font-size: 2em;
+    font-size: 2vw;
     color: var(--primary-color);
     margin: 10px
 }
@@ -458,29 +467,22 @@ body .bg-div {
 }
 
 
-/* media query for stretch dispositives less than 800px of width */
+/* media query for stretch dispositives less than 460px of width */
 
-@media (max-width: 800px){
+@media (min-width: 460px){
+    .nav-hamburger-box {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+/* media query for wide dispositives more than 700px of width */
+
+@media (max-width: 700px){
     .nav-container
     {
         height: 12vw;
-        font-size: 9px;
         max-height: 70px;
-        min-height: 20px;
-    }
-
-    .nav-container .icon-family h1{
-        font-size: 2.4em;
-        margin-inline-start: 10px;
-        margin-inline-end: 35px;
-    }
-
-    .nav-container .icon-family .house-icon{
-        height: 12vw;
-        width: 12vw;
-        max-height: 70px;
-        max-width: 70px;
-        min-width: 20px;
         min-height: 20px;
     }
 
@@ -496,12 +498,21 @@ body .bg-div {
         left: -50px;
     }
 
+    .nav-container .icon-family h1{
+        font-size: 7vw;
+        margin-inline-start: 2vw;
+        margin-inline-end: 4vw;
+    }
+
+    .nav-container .icon-family .house-icon{
+        height: 10vw;
+    }
+
     .nav-container .nav-link-box.active{
         display: flex;
         flex-direction: column;
         align-items: left;
         list-style-type: none;
-        font-size: 1.4em;
         margin: 0px;
         padding-inline-start: 0px;
     }
@@ -518,9 +529,5 @@ body .bg-div {
 
     .home-container {
         width: 40%;
-    }
-
-    .home-container h1{
-        font-size: 1.4em;
     }
 }
