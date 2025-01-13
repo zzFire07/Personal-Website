@@ -258,12 +258,12 @@ body .bg-div {
 
 .personal-info-box .box-styler .personal-title h2{
     color: var(--alt-text);
-    margin: 0px 0px 6px 0px;
+    margin: 1vw;
 }
 
 .personal-info-box .box-styler .personal-title h3{
     color: var(--alt-text);
-    margin: 0px 0px 15px 20px;
+    margin: 1vw;
 }
 
 .personal-info-box .box-styler .image-portrait{
@@ -466,6 +466,18 @@ body .bg-div {
         }
 }
 
+/* media query for small dispositives less than 1000px of width */
+@media (max-width: 1000px){
+    .nav-container .icon-family h1{
+        font-size: 7vw;
+    }
+
+    .nav-container .icon-family .house-icon{
+        height: 8vw;
+        width: 8vw;
+    }
+}
+
 /* media query for wide dispositives less than 700px of width */
 
 @media (max-width: 700px){
@@ -489,7 +501,7 @@ body .bg-div {
     }
 
     .nav-container .icon-family h1{
-        font-size: 7vw;
+        font-size: 9vw;
         margin-inline-start: 2vw;
         margin-inline-end: 4vw;
     }
