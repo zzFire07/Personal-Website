@@ -236,7 +236,6 @@ body .bg-div {
     margin-left: 1%;
     margin-top: 1%;
     justify-content: center;
-    min-width: 190px;
     z-index: 100;
     transition: none;
 }
@@ -378,7 +377,7 @@ body .bg-div {
 
 .portfolio .portfolio-container h1{
     text-align: center;
-    font-size: 2vw;
+    font-size: 5vw;
     color: var(--primary-color);
     margin: 10px
 }
@@ -416,7 +415,7 @@ body .bg-div {
     height: 55px;
     background-color: #756e76;
     
-    margin: 0px;
+    padding: 1vw;
 }
 
 .footer-box .copyright-text{
@@ -467,17 +466,7 @@ body .bg-div {
         }
 }
 
-
-/* media query for stretch dispositives less than 460px of width */
-
-@media (min-width: 460px){
-    .nav-hamburger-box {
-        width: 3rem;
-        height: 3rem;
-    }
-}
-
-/* media query for wide dispositives more than 700px of width */
+/* media query for wide dispositives less than 700px of width */
 
 @media (max-width: 700px){
     .nav-container
@@ -529,7 +518,34 @@ body .bg-div {
         position: relative;
     }
 
+    .personal-info-box{
+        width: 40%;
+    }
+
+    .home-container {
+        width: 55%;
+        font-size: 3vw;
+    }
+
+    .portfolio .portfolio-container h1{
+        font-size: 9vw;
+    }
+}
+
+/* media query for stretch dispositives less than 460px of width */
+
+@media (max-width: 460px){
+    .nav-hamburger-box {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .personal-info-box{
+        width: 50%;
+    }
+
     .home-container {
         width: 40%;
+        font-size: 2vw;
     }
 }
