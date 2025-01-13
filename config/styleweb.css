@@ -115,7 +115,7 @@ body .bg-div {
     font-family: var(--nav_title-font);
     font-size: 5vw;
     margin-inline-start: 1vw;
-    margin-inline-end: 2vw;
+    margin-inline-end: 1vw;
     color: var(--primary-color);
     cursor: default;
 }
@@ -414,8 +414,7 @@ body .bg-div {
     align-items: center;
     height: 55px;
     background-color: #756e76;
-    
-    padding: 1vw;
+    padding: 2vw;
 }
 
 .footer-box .copyright-text{
@@ -524,12 +523,6 @@ body .bg-div {
         padding-inline-end: 8px;
     }
 
-    .nav-container .dark-mode-container .dark-mode-box{
-        width: 60px;
-        height: 34px;
-        position: relative;
-    }
-
     .personal-info-box{
         width: 40%;
     }
@@ -559,5 +552,28 @@ body .bg-div {
     .home-container {
         width: 40%;
         font-size: 2vw;
+    }
+
+    .nav-container .dark-mode-container .dark-mode-box{
+        width: 50px;
+        height: 28.3px;
+    }
+
+    .dark-mode-box .slider{
+        width: 50px;
+        height: 28.3px;
+    }  
+
+    .dark-mode-box .slider:before{
+        width: 22.3px;
+        height: 22.3px;
+        left: 3px;
+        bottom: 3px;
+    }
+
+    .dark-mode-box .set-dark-mode:checked + .slider:before{
+        -webkit-transform: translateX(22.3px);
+        -ms-transform: translateX(22.3px);
+        transform: translateX(22.3px);
     }
 }
