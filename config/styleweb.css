@@ -491,13 +491,30 @@ body .bg-div {
         display: block;
     }
 
-    .nav-container .nav-links-box{
+    .nav-container .hamburger-menu.active{
+        position: absolute;
+        bottom: -38vw;
+        left: 53vw;
+        background-color: var(--primary-background);
+        border: var(--button-color) 3px solid;
+        border-radius: 10px;
+        z-index: 100;
+    }
+
+    .nav-container .hamburger-menu.active .nav-links-box{
+        display: flex;
+        flex-direction: column;
+        font-size: 7vw;
+    }
+
+    .nav-container .hamburger-menu.active .nav-links-box li{
+        margin: 2vw;
+    }
+
+    .nav-container .hamburger-menu .nav-links-box{
         display: none;
     }
 
-    .nav-container .hamburger-menu{
-        left: -50px;
-    }
 
     .nav-container .icon-family h1{
         font-size: 8vw;
@@ -543,6 +560,10 @@ body .bg-div {
     .nav-hamburger-box {
         width: 3rem;
         height: 3rem;
+    }
+
+    .nav-container .hamburger-menu.active{
+        bottom: -39vw;
     }
 
     .personal-info-box{

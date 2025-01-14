@@ -13,8 +13,16 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburgerBox = document.querySelector('.nav-hamburger-box'); // Selecciono la caja con el menu hamburguesa
     hamburgerMenu = document.querySelector('.hamburger-menu'); // Selecciono el menu hamburguesa
 
+    hamburgerLinks = document.querySelectorAll('.linkbox'); // Selecciono todos los links del menu hamburguesa
+    
+    hamburgerLinks.forEach(function(element) { // Para cada link, se agrega un evento de click que cierra el menu
+      element.addEventListener('click', cerrarHamburguesa);
+    });
+
+
     sectionSeparator = document.querySelectorAll('.section-scroll-progress'); // Selecciono todos los separadores de secciones
     window.addEventListener('scroll', movimientoSectionSeparator) // utilizo la funcion de movimiento junto con el scroll de la pagina
+
     hamburgerBox.addEventListener('click', activarHamburgesa ); // Si se presiona el boton de menu hamburguesa, se cambia la clase del menu
 })
 
@@ -66,5 +74,11 @@ var colorSwitch; // Variable para el interruptor DARK MODE
     function activarHamburgesa() {
       hamburgerMenu.classList.toggle('active');
       hamburgerBox.classList.toggle('active');
+    }
+
+    // Esta funcion cierra el menu hamburguesa al hacer click en un link
+    function cerrarHamburguesa() {
+      hamburgerMenu.classList.remove('active');
+      hamburgerBox.classList.remove('active');
     }
     
