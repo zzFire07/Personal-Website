@@ -385,7 +385,8 @@ body .bg-div {
 
 .portfolio article{
     position: relative;
-    border: 2px solid var(--secondary-background);
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-background);
     box-shadow: var(--secondary-background);
     border-radius: 15px;
     cursor: pointer;
@@ -433,7 +434,7 @@ body .bg-div {
 }
 
 .portfolio article p{
-    margin: 40px 40px 10px 10px;
+    margin: 40px 40px 40px 40px;
     color: var(--secondary-color);
 }
 
