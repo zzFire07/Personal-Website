@@ -124,7 +124,7 @@ body .bg-div {
 .nav-container .icon-family .house-icon{
     display: flex;
     height: 75%;
-    width: auto;
+    aspect-ratio: 1/1;
 }
 
 .nav-container .hamburger-menu {
@@ -385,7 +385,7 @@ body .bg-div {
 
 .portfolio article{
     position: relative;
-    color: azure;
+    background-color: var(--secondary-background);
     border: 2px solid black;
     border-radius: 15px;
     cursor: pointer;
@@ -432,7 +432,7 @@ body .bg-div {
 }
 
 .portfolio article p{
-    margin: 40px 0px 10px 10px;
+    margin: 40px 40px 10px 10px;
     color: var(--secondary-color);
 }
 
