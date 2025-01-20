@@ -385,8 +385,8 @@ body .bg-div {
 
 .portfolio article{
     position: relative;
-    background-color: var(--secondary-background);
-    border: 2px solid black;
+    border: 2px solid var(--secondary-background);
+    box-shadow: var(--secondary-background);
     border-radius: 15px;
     cursor: pointer;
     margin: 20px;
@@ -401,7 +401,7 @@ body .bg-div {
 
 .portfolio article h2{
     margin-left: 5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 0px;
     color: var(--primary-color);
 }
 
@@ -420,8 +420,9 @@ body .bg-div {
 
 .portfolio article h6{
     margin-left: 2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
-    color: var(--alt-text);
+    color: var(--secondary-color);
     font-size: 2rem;
 }
 
