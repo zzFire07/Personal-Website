@@ -49,8 +49,8 @@ body .bg-div {
 
 .nav-hamburger-box {
     position: relative;
-    width: 2rem;
-    height: 2rem;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
     display: none;
 }
@@ -109,6 +109,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     align-items: center;
+    height: 100%;
 }
 
 .nav-container .icon-family h1{
@@ -122,8 +123,8 @@ body .bg-div {
 
 .nav-container .icon-family .house-icon{
     display: flex;
-    height: 5vw;
-    width: 5vw;
+    height: 75%;
+    width: auto;
 }
 
 .nav-container .hamburger-menu {
@@ -386,10 +387,16 @@ body .bg-div {
     position: relative;
     color: azure;
     border: 2px solid black;
+    border-radius: 15px;
+    cursor: pointer;
     margin: 20px;
     width: 60%;
     min-height: 250px;
     /* margin-inline-start: 300px; */
+}
+
+.portfolio article a{
+    text-decoration: none;
 }
 
 .portfolio article h2{
@@ -470,11 +477,6 @@ body .bg-div {
     .nav-container .icon-family h1{
         font-size: 7vw;
     }
-
-    .nav-container .icon-family .house-icon{
-        height: 8vw;
-        width: 8vw;
-    }
 }
 
 /* media query for wide dispositives less than 700px of width */
@@ -486,6 +488,33 @@ body .bg-div {
         max-height: 70px;
         min-height: 20px;
     }
+
+    /* CSS DEL DARK MODE BOX */
+
+    .nav-container .dark-mode-container .dark-mode-box{
+        width: 50px;
+        height: 28.3px;
+    }
+
+    .dark-mode-box .slider{
+        width: 50px;
+        height: 28.3px;
+    }  
+
+    .dark-mode-box .slider:before{
+        width: 22.3px;
+        height: 22.3px;
+        left: 3px;
+        bottom: 3px;
+    }
+
+    .dark-mode-box .set-dark-mode:checked + .slider:before{
+        -webkit-transform: translateX(22.3px);
+        -ms-transform: translateX(22.3px);
+        transform: translateX(22.3px);
+    }
+
+    /* CSS DEL HAMBURGER MENU */
 
     .nav-container .nav-hamburger-box{
         display: block;
@@ -522,11 +551,6 @@ body .bg-div {
         margin-inline-end: 3vw;
     }
 
-    .nav-container .icon-family .house-icon{
-        height: 9vw;
-        width: 9vw;
-    }
-
     .nav-container .nav-link-box.active{
         display: flex;
         flex-direction: column;
@@ -557,10 +581,6 @@ body .bg-div {
 /* media query for stretch dispositives less than 460px of width */
 
 @media (max-width: 460px){
-    .nav-hamburger-box {
-        width: 3rem;
-        height: 3rem;
-    }
 
     .nav-container .hamburger-menu.active{
         bottom: -39vw;
