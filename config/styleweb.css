@@ -251,7 +251,7 @@ body .bg-div {
     overflow: hidden;
     align-items: center;
     width: 100%;
-    height: 400px;
+    height: auto;
     background-color: var(--terciary-background);
     border: 0.2em solid #000000;
     border-radius: 16px;
@@ -320,6 +320,7 @@ body .bg-div {
     flex-direction: row;
     justify-content: center;
     margin: 0px;
+    padding-bottom: 1vw;
 }
 .personal-info-box .information-grid .socialmedia-icons a{
     display: flex;
