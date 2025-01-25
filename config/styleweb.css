@@ -3,32 +3,33 @@
     transition: 0.2s ease-in-out;
 }
 
-:root{
-    --primary-color: #FAD6A5;
-    --secondary-color: #CFB997;
-    --primary-background: #135131;
-    --secondary-background: #008000;
-    --terciary-background: #6ac9f2;
-    --terciary-background_inverted: #560860;
-    --button-color: #000000;
-    --button-text: #FFFFFF;
-    --alt-text: #FF7F50;
-    --shadow-color: #FF9E9E;
-    --shadow-color-light: white;
+/* Tema Colores Crema */
+:root {
+    --primary-color: #D4B483; /* Crema tostado */
+    --secondary-color: #B96F38; /* Marrón anaranjado vibrante */
+    --primary-background: #FFF8E7; /* Crema claro */
+    --secondary-background: #F2E6D8; /* Beige tenue */
+    --terciary-background: #EBDDC8; /* Crema cálido */
+    --terciary-background_inverted: #A67C52; /* Marrón claro */
+    --button-color: #C19A6B; /* Marrón crema */
+    --button-text: #FFFFFF; /* Blanco */
+    --alt-text: #8B4513; /* Marrón oscuro */
+    --shadow-color: #D2B48C; /* Arena */
+    --shadow-color-light: rgba(255, 255, 255, 0.7); /* Blanco translúcido */
 }
 
-[tema="dark"]{
-    --primary-color: #A5D6FA; /* (un tono azul oscuro) */
-    --secondary-color: #97B9CF; /* (un tono azul grisáceo) */
-    --primary-background: #222222; /* (un color de fondo principal oscuro) */
-    --secondary-background: #333333; /* (un color de fondo secundario oscuro) */
-    --terciary-background: #560860; /* (un color de fondo terciario oscuro) */
-    --terciary-background_inverted: #6ac9f2; /* (un color de fondo terciario oscuro) */
-    --button-color: #FFFFFF;
-    --button-text: #000000;
-    --alt-text: #FFFF00;
-    --shadow-color: #006161;
-    --shadow-color-light: white;
+[tema="dark"] {
+    --primary-color: #C19A6B; /* Marrón crema oscuro */
+    --secondary-color: #D2996C; /* Marrón claro con un toque de naranja */
+    --primary-background: #3E2C20; /* Marrón oscuro */
+    --secondary-background: #4F3A28; /* Marrón profundo */
+    --terciary-background: #6B4226; /* Marrón medio */
+    --terciary-background_inverted: #D4B483; /* Crema tostado */
+    --button-color: #8B4513; /* Marrón oscuro */
+    --button-text: #FFFFFF; /* Blanco */
+    --alt-text: #F5DEB3; /* Trigo */
+    --shadow-color: #6A5D4D; /* Gris marrón */
+    --shadow-color-light: rgba(62, 44, 32, 0.5); /* Marrón translúcido */
 }
 
 
