@@ -141,9 +141,6 @@ body .bg-div {
 
 .nav-container .hamburger-menu {
     position: relative;
-    display: flex;
-    height: 100%;
-    align-items: self-end;
 
 }
 
@@ -435,7 +432,6 @@ body .bg-div {
     margin: 20px;
     width: 85%;
     min-height: 250px;
-    /* margin-inline-start: 300px; */
 }
 
 .portfolio article a{
@@ -563,13 +559,6 @@ body .bg-div {
         }
 }
 
-/* media query for small dispositives less than 1000px of width */
-@media (max-width: 1000px){
-    .nav-container .icon-family h1{
-        font-size: 7vw;
-    }
-}
-
 /* media query for wide dispositives less than 700px of width */
 
 @media (max-width: 700px){
@@ -636,7 +625,6 @@ body .bg-div {
 
     .home-container {
         width: 55%;
-        font-size: 3vw;
     }
 
     .portfolio .portfolio-container h1{

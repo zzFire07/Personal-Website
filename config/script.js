@@ -26,27 +26,23 @@ document.addEventListener('DOMContentLoaded', function() {
     hamburgerBox.addEventListener('click', activarHamburgesa ); // Si se presiona el boton de menu hamburguesa, se cambia la clase del menu
 })
 
-
-
 var colorSwitch; // Variable para el interruptor DARK MODE
 
     // Esta funcion cambia el tema del documento, entre un tema claro y uno obscuro.
     function cambiaTema(ev) { // Se utiliza el evento de "change" del boton como parametro
       if (ev.target.checked) { // Si el boton se presiona, se cambia el atributo "tema" del html a "dark"
         document.documentElement.setAttribute('tema', 'dark');
-        console.log('dark')
       } else {
         document.documentElement.setAttribute('tema', 'light');
-        console.log('light')
       }
     }
 
     // Esta funcion mueve la caja con mis datos personales, para que este visible solo un tramo.
     function movimientoPersonalBox() {
+    var vw = window.innerWidth / 100; // Obtiene el ancho de la ventana y lo divide en 100
 
     var initialOffset = personalBox.getBoundingClientRect().offsetTop; // Obtiene la distancia entre la caja y el borde superior de la pagina
-    var maxOffset = 300;  // Establece como 300px la distancia maxima que se puede mover la caja
-
+    var maxOffset = 60 * vw;  // Establece como 60vw la distancia maxima que se puede mover la caja
     var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
 
   if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la distancia maxima, se mueve la caja
