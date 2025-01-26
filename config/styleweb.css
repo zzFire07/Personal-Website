@@ -1,6 +1,7 @@
 *, :after,:before {
     box-sizing: border-box;
     transition: 0.2s ease-in-out;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 :root{
@@ -272,11 +273,13 @@ body .bg-div {
 
 .personal-info-box .box-styler .personal-title h2{
     color: var(--alt-text);
+    font-size: 2rem;
     margin: 1vw;
 }
 
 .personal-info-box .box-styler .personal-title h3{
     color: var(--alt-text);
+    font-size: 1.6rem;
     margin: 1vw;
 }
 
@@ -311,10 +314,16 @@ body .bg-div {
     margin-bottom: 0.5rem;
 }
 
+.personal-info-box .box-styler .information-grid h2{
+    font-size: 2rem;
+}
+
 .personal-info-box .box-styler .aboutme-info p{
     color: var(--alt-text);
     margin: 0rem 0.4rem 0px 0.4rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    font-weight: 600;
+
 }
 
 .personal-info-box .information-grid .socialmedia-info{
