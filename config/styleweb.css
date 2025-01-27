@@ -501,7 +501,7 @@ body .bg-div {
 }
 
 .footer-box .footer-button-box .footer-button{
-    height: 25px;
+    height: auto;
     margin: 10px;
     color: coral;
     background-color: darkred;
