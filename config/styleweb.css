@@ -101,8 +101,7 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
-    height: 6vw;
-    min-height: 70px;
+    height: 10vh;
     background-color: var(--secondary-background);
     font-size: 1vw;
 }
@@ -112,21 +111,21 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     height: 100%;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .nav-container .icon-family h1{
     font-family: var(--nav_title-font);
-    font-size: 5vw;
-    margin-inline-start: 1vw;
-    margin-inline-end: 1vw;
+    font-size: 7vh;
+    margin-inline-start: 1.5vh;
+    margin-inline-end: 1.5vh;
     color: var(--primary-color);
     cursor: default;
 }
 
 .nav-container .icon-family .house-icon{
     display: flex;
-    height: 75%;
+    height: 70%;
     aspect-ratio: 1/1;
 }
 
@@ -141,6 +140,8 @@ body .bg-div {
 
 .nav-container .hamburger-menu {
     position: relative;
+    display: flex;
+    align-items: flex-end;
 
 }
 
@@ -148,7 +149,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 3.4vw;
+    font-size: 5vh;
     margin: 0px;
     padding-inline-start: 0px;
     list-style-type: none;
@@ -165,8 +166,8 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    right: 2vw;
-    font-size: 2vw;
+    right: 2vh;
+    font-size: 2vh;
 }
 
 .nav-container .dark-mode-container p{
@@ -175,8 +176,8 @@ body .bg-div {
 }
 
 .nav-container .dark-mode-container .dark-mode-box{
-    height: 5vw;
-    width: 8.8235vw;
+    height: 4vh;
+    width: 7.0588vh;
     position: relative;
 }
 
@@ -187,8 +188,8 @@ body .bg-div {
 .dark-mode-box .slider{
     position: absolute;
     cursor: pointer;
-    height: 5vw;
-    width: 8.8235vw;
+    height: 4vh;
+    width: 7.0588vh;
     top: 0;
     left: 0;
     right: 0;
@@ -201,10 +202,10 @@ body .bg-div {
 .dark-mode-box .slider:before{
     position: absolute;
     content: "";
-    width: 3.8235vw;
-    height: 3.8235vw;
-    left: 0.58823vw;
-    bottom: 0.58823vw;
+    width: 3.0588vh;
+    height: 3.0588vh;
+    left: 0.470584vh;
+    bottom: 0.470584vh;
     background-color:#000000;
     -webkit-transition: .4s;
     transition: .4s;
@@ -219,13 +220,13 @@ body .bg-div {
 }
 
 .dark-mode-box .set-dark-mode:checked + .slider:before{
-    -webkit-transform: translateX(3.8235vw);
-    -ms-transform: translateX(3.8235vw);
-    transform: translateX(3.8235vw);
+    -webkit-transform: translateX(3.0588vh);
+    -ms-transform: translateX(3.0588vh);
+    transform: translateX(3.0588vh);
 }
 
 .dark-mode-box .slider.round{
-    border-radius: 5vw;
+    border-radius: 4vw;
 }
 
 .dark-mode-box .slider.round:before{
@@ -350,8 +351,7 @@ body .bg-div {
 
 
 .home{
-    height: 75vw;
-    min-height: 750px;
+    height: 100vh;
     background-color: var(--primary-background);
     box-sizing: border-box;
 }
@@ -364,10 +364,9 @@ body .bg-div {
     animation: neon 3s infinite;
 }
 .home-container h1{
-    contain: content;
     text-transform: uppercase;
+    font-size: 5vh;
     font-family: "Archivo Black", "Archivo", sans-serif;
-    font-weight: normal;
     text-align: center;
 }
 
@@ -558,65 +557,64 @@ body .bg-div {
             transform:translateX(-10px) translateY(-10px)
         }
 }
+/* media query for small dispositives less than 1100 of width */
+@media (max-width: 1100px){
+
+/* CSS DEL HAMBURGER MENU */
+
+.nav-container .nav-hamburger-box{
+    display: block;
+}
+
+.nav-container .hamburger-menu.active{
+    position: absolute;
+    display: block;
+    bottom: -38vw;
+    left: 53vw;
+    background-color: var(--primary-background);
+    border: var(--button-color) 3px solid;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.nav-container .hamburger-menu.active .nav-links-box{
+    display: flex;
+    flex-direction: column;
+    font-size: 7vw;
+}
+
+.nav-container .hamburger-menu.active .nav-links-box li{
+    margin: 2vw;
+}
+
+.nav-container .hamburger-menu .nav-links-box{
+    display: none;
+}
+
+.nav-container .nav-link-box.active{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    list-style-type: none;
+    margin: 0px;
+    padding-inline-start: 0px;
+}
+
+.nav-links-box li a{
+    padding-inline-end: 8px;
+}
+
+}
+
 
 /* media query for wide dispositives less than 700px of width */
 
 @media (max-width: 700px){
-    .nav-container
-    {
-        height: 12vw;
-        max-height: 70px;
-        min-height: 20px;
-    }
 
-    /* CSS DEL HAMBURGER MENU */
+    /* CSS DEL NAVBAR */
 
-    .nav-container .nav-hamburger-box{
-        display: block;
-    }
-
-    .nav-container .hamburger-menu.active{
-        position: absolute;
-        bottom: -38vw;
-        left: 53vw;
-        background-color: var(--primary-background);
-        border: var(--button-color) 3px solid;
-        border-radius: 10px;
-        z-index: 100;
-    }
-
-    .nav-container .hamburger-menu.active .nav-links-box{
-        display: flex;
-        flex-direction: column;
-        font-size: 7vw;
-    }
-
-    .nav-container .hamburger-menu.active .nav-links-box li{
-        margin: 2vw;
-    }
-
-    .nav-container .hamburger-menu .nav-links-box{
-        display: none;
-    }
-
-
-    .nav-container .icon-family h1{
-        font-size: 8vw;
-        margin-inline-start: 2vw;
-        margin-inline-end: 3vw;
-    }
-
-    .nav-container .nav-link-box.active{
-        display: flex;
-        flex-direction: column;
-        align-items: left;
-        list-style-type: none;
-        margin: 0px;
-        padding-inline-start: 0px;
-    }
-
-    .nav-links-box li a{
-        padding-inline-end: 8px;
+    .nav-container .icon-family .house-icon{
+        height: 60%;
     }
 
     .personal-info-box{
@@ -636,6 +634,16 @@ body .bg-div {
 
 @media (max-width: 460px){
 
+    /* CSS DEL NAVBAR */
+
+    .nav-container{
+        height: 7vh;
+    }
+
+    .nav-container .icon-family h1{
+        font-size: 4vh;
+    }
+
     .nav-container .hamburger-menu.active{
         bottom: -39vw;
     }
@@ -646,6 +654,20 @@ body .bg-div {
 
     .home-container {
         width: 40%;
-        font-size: 2vw;
+    }
+
+    .home-container h1{
+        font-size: 2.5vh;
+    }
+}
+
+/* media query for stretch dispositives less than 360px of width */
+
+@media (max-width: 360px){
+
+    /* CSS DEL NAVBAR */
+
+    .nav-container .icon-family h1{
+        font-size: 3vh;
     }
 }

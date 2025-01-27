@@ -2,7 +2,9 @@ document.addEventListener('DOMContentLoaded', function() {
     colorSwitch = document.querySelector('.set-dark-mode'); // Selecciono el interruptor de dark mode
     colorSwitch.addEventListener('change', cambiaTema); // Utilizo la funcion cambiaTema cada vez que el boton es presionado
 
-
+    homeContainer = document.querySelector('.home'); // Selecciono el contenedor de la pagina principal
+    navContainer = document.querySelector('.nav-container'); // Selecciono el contenedor de la barra de navegacion
+    boxStylerContainer = document.querySelector('.box-styler'); // Selecciono el contenedor de los estilos de caja
     personalBox = document.querySelector('.personal-info-box'); // Selecciono la caja aside con mis datos personales.
     window.addEventListener('scroll', movimientoPersonalBox); // utilizo la funcion de movimiento junto con el scroll de la pagina
 
@@ -39,10 +41,12 @@ var colorSwitch; // Variable para el interruptor DARK MODE
 
     // Esta funcion mueve la caja con mis datos personales, para que este visible solo un tramo.
     function movimientoPersonalBox() {
-    var vw = window.innerWidth / 100; // Obtiene el ancho de la ventana y lo divide en 100
+
+    var homeHeight = window.innerHeight / 1.015; // Obtiene la altura de la ventana y se le agrega margen
+    var boxStylerHeight = boxStylerContainer.getBoundingClientRect().height; // Obtiene la altura de la caja de estilos de la caja personal box
+    var maxOffset = homeHeight - boxStylerHeight; // Establece la distancia maxima que se puede mover la caja
 
     var initialOffset = personalBox.getBoundingClientRect().offsetTop; // Obtiene la distancia entre la caja y el borde superior de la pagina
-    var maxOffset = 60 * vw;  // Establece como 60vw la distancia maxima que se puede mover la caja
     var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
 
   if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la distancia maxima, se mueve la caja
@@ -51,7 +55,7 @@ var colorSwitch; // Variable para el interruptor DARK MODE
     personalBox.style.top = initialOffset + scrollPosition + 'px';
   } else {  // Si la posicion del scroll es mayor a la distancia maxima, se fija la caja en la distancia maxima
     personalBox.style.position = 'absolute';
-    personalBox.style.paddingTop =  maxOffset + 'px';
+    personalBox.style.paddingTop = maxOffset + 'px';
   }
 }
 
