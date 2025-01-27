@@ -364,6 +364,7 @@ body .bg-div {
     animation: neon 3s infinite;
 }
 .home-container h1{
+    contain: content;
     text-transform: uppercase;
     font-size: 5vh;
     font-family: "Archivo Black", "Archivo", sans-serif;
