@@ -588,9 +588,11 @@ body .bg-div {
     display:flex;
     flex-direction: row;
     align-items: center;
-    height: 55px;
+    height: fit-content;
     background-color: #756e76;
-    padding: 2vw;
+    margin: 0px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .footer-box .copyright-text{
@@ -599,6 +601,7 @@ body .bg-div {
     height: 100%;
     align-items: center;
     justify-content: center;
+    margin: 0px;
 }
 
 .footer-box .footer-button-box{
@@ -607,9 +610,13 @@ body .bg-div {
     
 }
 
+.footer-box .footer-button-box a{
+    display: flex;
+    text-decoration: none;
+}
+
 .footer-box .footer-button-box .footer-button{
     height: auto;
-    margin: 10px;
     color: coral;
     background-color: darkred;
     border: 3px solid #dc143c;
