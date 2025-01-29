@@ -101,7 +101,7 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
-    height: 10vh;
+    height: 8vh;
     background-color: var(--secondary-background);
     font-size: 1vw;
 }
@@ -116,7 +116,7 @@ body .bg-div {
 
 .nav-container .icon-family h1{
     font-family: var(--nav_title-font);
-    font-size: 7vh;
+    font-size: 6vh;
     margin-inline-start: 1.5vh;
     margin-inline-end: 1.5vh;
     color: var(--primary-color);
@@ -149,7 +149,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 5vh;
+    font-size: 4vh;
     margin: 0px;
     padding-inline-start: 0px;
     list-style-type: none;
@@ -366,7 +366,7 @@ body .bg-div {
 .home-container h1{
     contain: content;
     text-transform: uppercase;
-    font-size: 5vh;
+    font-size: 4vh;
     font-family: "Archivo Black", "Archivo", sans-serif;
     text-align: center;
 }
@@ -374,8 +374,9 @@ body .bg-div {
 .bubbles-container{
     position: absolute;
     display: flex;
+    justify-content: space-around;
     width: 100%;
-    height: 750px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -428,7 +429,6 @@ body .bg-div {
     background-color: var(--secondary-background);
     box-shadow: var(--secondary-background) 5px 5px 10px 6px;
     border-radius: 15px;
-    cursor: pointer;
     margin: 20px;
     width: 85%;
     min-height: 250px;
@@ -472,8 +472,101 @@ body .bg-div {
 }
 
 .portfolio article p{
-    margin: 40px 40px 40px 40px;
+    margin: 2vh 2vw 2vh 2vw;
     color: var(--secondary-color);
+}
+
+.portfolio .button-see-more-article-1{
+    display: flex;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+}
+
+.portfolio .button-see-more-article-1 p{
+    font-size: 3vh;
+    cursor: pointer;
+    width: auto;
+}
+
+.portfolio .button-see-more-article-2 p{
+    font-size: 3vh;
+    cursor: pointer;
+    width: auto;
+}
+
+.portfolio .button-see-more-article-3 p{
+    font-size: 3vh;
+    cursor: pointer;
+    width: auto;
+}
+
+.portfolio .see-more-article-1{
+    display: none;
+}
+
+.portfolio .see-more-article-1.active{
+    display: block;
+}
+
+.portfolio .see-more-article-2.active{
+    display: block;
+}
+
+.portfolio .see-more-article-3.active{
+    display: block;
+}
+
+.portfolio .see-more-article-2{
+    display: none;
+}
+
+.portfolio .see-more-article-3{
+    display: none;
+}
+
+.portfolio .links-article{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+.portfolio .links-article img{
+    height: 10vh;
+    width: auto;
+    aspect-ratio: 1/1;
+    margin: 2vh 2vw 2vh 2vw;
+}
+
+.portfolio .links-article .repository-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--button-color) 0.5vw solid;
+    border-radius: 8vw;
+}
+
+.portfolio .links-article .repository-link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.portfolio .links-article .web-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--button-color) 0.5vw solid;
+    border-radius: 8vw;
+}
+
+.portfolio .links-article .web-link a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 
@@ -561,49 +654,54 @@ body .bg-div {
 /* media query for small dispositives less than 1100 of width */
 @media (max-width: 1100px){
 
-/* CSS DEL HAMBURGER MENU */
-
-.nav-container .nav-hamburger-box{
-    display: block;
+    
+    .nav-links-box li a{
+        padding-inline-end: 8px;
+    }
+    
 }
 
-.nav-container .hamburger-menu.active{
-    position: absolute;
-    display: block;
-    bottom: -38vw;
-    left: 53vw;
-    background-color: var(--primary-background);
-    border: var(--button-color) 3px solid;
-    border-radius: 10px;
-    z-index: 100;
-}
+@media (max-aspect-ratio: 2/3){
 
-.nav-container .hamburger-menu.active .nav-links-box{
-    display: flex;
-    flex-direction: column;
-    font-size: 7vw;
-}
-
-.nav-container .hamburger-menu.active .nav-links-box li{
-    margin: 2vw;
-}
-
-.nav-container .hamburger-menu .nav-links-box{
-    display: none;
-}
-
-.nav-container .nav-link-box.active{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    list-style-type: none;
-    margin: 0px;
-    padding-inline-start: 0px;
-}
-
-.nav-links-box li a{
-    padding-inline-end: 8px;
-}
+    /* CSS DEL HAMBURGER MENU */
+    
+    .nav-container .nav-hamburger-box{
+        display: block;
+    }
+    
+    .nav-container .hamburger-menu.active{
+        position: absolute;
+        display: block;
+        bottom: -38vw;
+        left: 53vw;
+        background-color: var(--primary-background);
+        border: var(--button-color) 3px solid;
+        border-radius: 10px;
+        z-index: 100;
+    }
+    
+    .nav-container .hamburger-menu.active .nav-links-box{
+        display: flex;
+        flex-direction: column;
+        font-size: 7vw;
+    }
+    
+    .nav-container .hamburger-menu.active .nav-links-box li{
+        margin: 2vw;
+    }
+    
+    .nav-container .hamburger-menu .nav-links-box{
+        display: none;
+    }
+    
+    .nav-container .nav-link-box.active{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        list-style-type: none;
+        margin: 0px;
+        padding-inline-start: 0px;
+    }
 
 }
 
@@ -611,6 +709,46 @@ body .bg-div {
 /* media query for wide dispositives less than 700px of width */
 
 @media (max-width: 700px){
+    
+    /* CSS DEL HAMBURGER MENU */
+    
+    .nav-container .nav-hamburger-box{
+        display: block;
+    }
+    
+    .nav-container .hamburger-menu.active{
+        position: absolute;
+        display: block;
+        bottom: -38vw;
+        left: 53vw;
+        background-color: var(--primary-background);
+        border: var(--button-color) 3px solid;
+        border-radius: 10px;
+        z-index: 100;
+    }
+    
+    .nav-container .hamburger-menu.active .nav-links-box{
+        display: flex;
+        flex-direction: column;
+        font-size: 7vw;
+    }
+    
+    .nav-container .hamburger-menu.active .nav-links-box li{
+        margin: 2vw;
+    }
+    
+    .nav-container .hamburger-menu .nav-links-box{
+        display: none;
+    }
+    
+    .nav-container .nav-link-box.active{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        list-style-type: none;
+        margin: 0px;
+        padding-inline-start: 0px;
+    }
 
     /* CSS DEL NAVBAR */
 
