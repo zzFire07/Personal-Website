@@ -485,6 +485,23 @@ body .bg-div {
     margin-left: 2vw;
     margin-right: 2vw;
     margin-bottom: 2vh;
+    width: fit-content;
+}
+
+.portfolio .button-see-more-article-2{
+    display: flex;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    width: fit-content;
+}
+
+.portfolio .button-see-more-article-3{
+    display: flex;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    margin-bottom: 2vh;
+    width: fit-content;
 }
 
 .portfolio .button-see-more-article-1 p{
@@ -509,6 +526,14 @@ body .bg-div {
     display: none;
 }
 
+.portfolio .see-more-article-2{
+    display: none;
+}
+
+.portfolio .see-more-article-3{
+    display: none;
+}
+
 .portfolio .see-more-article-1.active{
     display: block;
 }
@@ -519,14 +544,6 @@ body .bg-div {
 
 .portfolio .see-more-article-3.active{
     display: block;
-}
-
-.portfolio .see-more-article-2{
-    display: none;
-}
-
-.portfolio .see-more-article-3{
-    display: none;
 }
 
 .portfolio .links-article{
