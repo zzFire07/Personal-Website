@@ -209,6 +209,18 @@ body .bg-div {
     background-color:#e4b90f;
     -webkit-transition: .4s;
     transition: .4s;
+}
+
+
+.dark-mode-box .set-dark-mode:checked + .slider:before{
+    -webkit-transform: translate(2.5588vh, -0.5vh);
+    -ms-transform: translate(2.5588vh, -0.5vh);
+    transform: translate(2.5588vh, -0.5vh);
+    background-color: transparent;
+    box-shadow: 0.5vh 0.5vh 0 0 darkgrey;
+}
+
+.dark-mode-box .set-dark-mode:not(:checked) + .slider:before{
     animation: shine 1.2s ease-in-out infinite;
 }
 
@@ -221,26 +233,6 @@ body .bg-div {
     }
     100% {
         box-shadow: 0 0 1rem 0.5vh #e4b90f;
-    }
-}
-
-.dark-mode-box .set-dark-mode:checked + .slider:before{
-    -webkit-transform: translateX(3.0588vh);
-    -ms-transform: translateX(3.0588vh);
-    transform: translateX(3.0588vh);
-    background-color: darkgrey;
-    animation: shadow 1.2s ease-in-out infinite;
-}
-
-@keyframes shadow {
-    0% {
-        box-shadow: 0 0 1rem 0.5vh darkgrey;
-    }
-    50% {
-        box-shadow: 0 0 1rem 1vh darkgrey;
-    }
-    100% {
-        box-shadow: 0 0 1rem 0.5vh darkgrey;
     }
 }
 
