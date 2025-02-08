@@ -80,8 +80,12 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
 
       var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
+      let vh = window.innerHeight; // Obtiene la altura de la ventana, 1% de la altura de la ventana
+      let correctorDeAlturaScroll = vh; // Corrige la altura de la pagina para que el scroll sea mas preciso
+
       sectionSeparator.forEach(function(element) { // Para cada separador de seccion, se cambia el ancho del elemento
-        element.style.width = ((scrollPosition / webHeight * 170) * 1.1) + '%';
+
+        element.style.width = ((scrollPosition + correctorDeAlturaScroll) / webHeight) * 100 + '%';
       });
   }
 

@@ -206,23 +206,42 @@ body .bg-div {
     height: 3.0588vh;
     left: 0.470584vh;
     bottom: 0.470584vh;
-    background-color:#000000;
+    background-color:#e4b90f;
     -webkit-transition: .4s;
     transition: .4s;
+    animation: shine 1.2s ease-in-out infinite;
 }
 
-.dark-mode-box .set-dark-mode:checked + .slider{
-    background-color: #FFFFFF;
-}
-
-.dark-mode-box .set-dark-mode:focus + .slider{
-    box-shadow: 0 0 1px #FFFFFF;
+@keyframes shine {
+    0% {
+        box-shadow: 0 0 1rem 0.5vh #e4b90f;
+    }
+    50% {
+        box-shadow: 0 0 1rem 1vh #e4b90f;
+    }
+    100% {
+        box-shadow: 0 0 1rem 0.5vh #e4b90f;
+    }
 }
 
 .dark-mode-box .set-dark-mode:checked + .slider:before{
     -webkit-transform: translateX(3.0588vh);
     -ms-transform: translateX(3.0588vh);
     transform: translateX(3.0588vh);
+    background-color: darkgrey;
+    animation: shadow 1.2s ease-in-out infinite;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 1rem 0.5vh darkgrey;
+    }
+    50% {
+        box-shadow: 0 0 1rem 1vh darkgrey;
+    }
+    100% {
+        box-shadow: 0 0 1rem 0.5vh darkgrey;
+    }
 }
 
 .dark-mode-box .slider.round{
@@ -328,6 +347,7 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     margin: 0px;
+    margin-bottom: 3vh;
 }
 
 .personal-info-box .information-grid .socialmedia-info img{
@@ -414,6 +434,7 @@ body .bg-div {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .portfolio .portfolio-container h1{
@@ -508,18 +529,24 @@ body .bg-div {
     font-size: 3vh;
     cursor: pointer;
     width: auto;
+    border: var(--button-color) 0.5vw solid;
+    border-radius: 10px;
 }
 
 .portfolio .button-see-more-article-2 p{
     font-size: 3vh;
     cursor: pointer;
     width: auto;
+    border: var(--button-color) 0.5vw solid;
+    border-radius: 10px;
 }
 
 .portfolio .button-see-more-article-3 p{
     font-size: 3vh;
     cursor: pointer;
     width: auto;
+    border: var(--button-color) 0.5vw solid;
+    border-radius: 10px;
 }
 
 .portfolio .see-more-article-1{
