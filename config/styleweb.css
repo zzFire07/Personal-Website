@@ -626,6 +626,7 @@ body .bg-div {
 .footer-box .footer-button-box{
     position: static;
     left: 25px;
+    margin-right: 2vw;
     
 }
 
@@ -641,6 +642,7 @@ body .bg-div {
     border: 3px solid #dc143c;
     border-radius: 10px;
     cursor: pointer;
+
 }
 
 .section-separator{
