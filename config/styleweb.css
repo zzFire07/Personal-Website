@@ -521,7 +521,7 @@ body .bg-div {
     font-size: 3vh;
     cursor: pointer;
     width: auto;
-    border: var(--button-color) 0.5vw solid;
+    border: 2px solid var(--secondary-color);
     border-radius: 10px;
 }
 
@@ -529,7 +529,7 @@ body .bg-div {
     font-size: 3vh;
     cursor: pointer;
     width: auto;
-    border: var(--button-color) 0.5vw solid;
+    border: 2px solid var(--secondary-color);
     border-radius: 10px;
 }
 
@@ -537,7 +537,7 @@ body .bg-div {
     font-size: 3vh;
     cursor: pointer;
     width: auto;
-    border: var(--button-color) 0.5vw solid;
+    border: 2px solid var(--secondary-color);
     border-radius: 10px;
 }
 
