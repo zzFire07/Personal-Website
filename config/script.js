@@ -80,7 +80,7 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
 
       var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
-      let vh = window.innerHeight; // Obtiene la altura de la ventana, 1% de la altura de la ventana
+      let vh = window.visualViewport.height; // Obtiene la altura del dispositivo, 1% de la altura del dispositivo
       let correctorDeAlturaScroll = vh; // Corrige la altura de la pagina para que el scroll sea mas preciso
 
       sectionSeparator.forEach(function(element) { // Para cada separador de seccion, se cambia el ancho del elemento
