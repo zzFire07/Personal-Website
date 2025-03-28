@@ -56,7 +56,10 @@ var colorSwitch; // Variable para el interruptor DARK MODE
   // Esta funcion mueve la caja con mis datos personales, para que este visible solo un tramo.
   function movimientoPersonalBox() {
 
-  var homeHeight = window.visualViewport.height / 1.1; // Obtiene la altura de la ventana y se le agrega margen
+  var homeHeight = homeContainer.getBoundingClientRect().height; // Obtiene la altura de la ventana
+
+      homeHeight = homeHeight / 1.05; // Corrige la altura de la ventana para que haya mas margen
+
   var boxStylerHeight = boxStylerContainer.getBoundingClientRect().height; // Obtiene la altura de la caja de estilos de la caja personal box
   var maxOffset = homeHeight - boxStylerHeight; // Establece la distancia maxima que se puede mover la caja
 
@@ -80,7 +83,7 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
 
       var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
-      let vh = window.visualViewport.height; // Obtiene la altura del dispositivo, 1% de la altura del dispositivo
+      let vh = homeContainer.getBoundingClientRect().height / 100; // Obtiene la altura del dispositivo, 1% de la altura del dispositivo
       let correctorDeAlturaScroll = vh; // Corrige la altura de la pagina para que el scroll sea mas preciso
 
       sectionSeparator.forEach(function(element) { // Para cada separador de seccion, se cambia el ancho del elemento
