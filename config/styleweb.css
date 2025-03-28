@@ -369,6 +369,7 @@ body .bg-div {
 }
 
 .home-container{
+    z-index: 3;
     position: absolute;
     color:var(--primary-color);
     right: 5px;
@@ -376,7 +377,6 @@ body .bg-div {
     animation: neon 3s infinite;
 }
 .home-container h1{
-    contain: content;
     text-transform: uppercase;
     font-size: 4svh;
     font-family: "Archivo Black", "Archivo", sans-serif;
@@ -406,6 +406,7 @@ body .bg-div {
     0 0 40px #6ac9f2, 0 0 100px #6ac9f2;
     animation: animate 15s linear infinite;
     animation-duration: calc(120s / var(--i));
+    z-index: 2;
 }
 
 .bubbles-container span:nth-child(even){
