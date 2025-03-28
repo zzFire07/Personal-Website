@@ -80,15 +80,15 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
   function movimientoSectionSeparator() {
 
       var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
+      let correctorDeAlturaScroll = scrollPosition * 1.05; // Corrige la altura de la pagina para que el scroll sea mas preciso
 
       var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
       let vh = homeContainer.getBoundingClientRect().height; // Obtiene la altura del dispositivo, 1% de la altura del dispositivo
-      let correctorDeAlturaScroll = vh + 80; // Corrige la altura de la pagina para que el scroll sea mas preciso
 
       sectionSeparator.forEach(function(element) { // Para cada separador de seccion, se cambia el ancho del elemento
 
-        element.style.width = ((scrollPosition + correctorDeAlturaScroll) / webHeight) * 100 + '%';
+        element.style.width = (scrollPosition / webHeight) * 100 + '%';
       });
   }
 
