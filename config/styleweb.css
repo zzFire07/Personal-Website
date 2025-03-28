@@ -840,6 +840,14 @@ body .bg-div {
     .home-container h1{
         font-size: 2.5svh;
     }
+
+    .personal-info-box .box-styler .personal-title h3{
+        color: var(--alt-text);
+        font-size: 1.2rem;
+        margin: 1svw;
+    }
+
+
 }
 
 /* media query for stretch dispositives less than 360px of width */
