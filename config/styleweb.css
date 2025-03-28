@@ -553,14 +553,26 @@ body .bg-div {
 
 .portfolio .see-more-article-1.active{
     display: block;
+    background-color: var(--primary-background);
+    border: 2px solid var(--secondary-color);
+    margin: 5svh 5svw 5svh 5svw;
+    border-radius: 2vh;
 }
 
 .portfolio .see-more-article-2.active{
     display: block;
+    background-color: var(--primary-background);
+    border: 2px solid var(--secondary-color);
+    margin: 5svh 5svw 5svh 5svw;
+    border-radius: 2vh;
 }
 
 .portfolio .see-more-article-3.active{
     display: block;
+    background-color: var(--primary-background);
+    border: 2px solid var(--secondary-color);
+    margin: 5svh 5svw 5svh 5svw;
+    border-radius: 2vh;
 }
 
 .portfolio .links-article{
