@@ -80,7 +80,7 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
   function movimientoSectionSeparator() {
 
       var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
-      let correctorDeAlturaScroll = scrollPosition * 1.05; // Corrige la altura de la pagina para que el scroll sea mas preciso
+      let correctorDeAlturaScroll = scrollPosition * 1.11; // Corrige la altura de la pagina para que el scroll sea mas preciso
 
       var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
