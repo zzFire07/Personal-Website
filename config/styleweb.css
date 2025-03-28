@@ -417,8 +417,6 @@ body .bg-div {
 
 
 .portfolio{
-    display: flex;
-    flex-direction: column;
     background-color: var(--primary-background);
     padding-bottom: 0.8rem;
 }
@@ -438,7 +436,6 @@ body .bg-div {
 }
 
 .portfolio article{
-    position: relative;
     border: 2px solid var(--secondary-color);
     background-color: var(--secondary-background);
     box-shadow: var(--secondary-background) 5px 5px 10px 6px;
