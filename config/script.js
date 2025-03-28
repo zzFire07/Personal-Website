@@ -88,7 +88,7 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
 
       sectionSeparator.forEach(function(element) { // Para cada separador de seccion, se cambia el ancho del elemento
 
-        element.style.width = (correctorDeAlturaScroll + screen / webHeight) * 100 + '%';
+        element.style.width = ((correctorDeAlturaScroll + screen) / webHeight) * 100 + '%';
       });
   }
 
