@@ -34,8 +34,8 @@
 
 
 body{
-    min-height: 100dvh;
-    min-width: 100dvw;
+    min-height: 100svh;
+    min-width: 100svw;
     display: contents;
     float: none!important;
     margin: 0vh auto!important;
@@ -101,7 +101,7 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
-    height: 8dvh;
+    height: 8svh;
     background-color: var(--secondary-background);
     font-size: 1vw;
 }
@@ -116,9 +116,9 @@ body .bg-div {
 
 .nav-container .icon-family h1{
     font-family: var(--nav_title-font);
-    font-size: 6dvh;
-    margin-inline-start: 1.5dvh;
-    margin-inline-end: 1.5dvh;
+    font-size: 6svh;
+    margin-inline-start: 1.5svh;
+    margin-inline-end: 1.5svh;
     color: var(--primary-color);
     cursor: default;
 }
@@ -149,7 +149,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 4dvh;
+    font-size: 4svh;
     margin: 0px;
     padding-inline-start: 0px;
     list-style-type: none;
@@ -166,8 +166,8 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    right: 2dvh;
-    font-size: 2dvh;
+    right: 2svh;
+    font-size: 2svh;
 }
 
 .nav-container .dark-mode-container p{
@@ -176,8 +176,8 @@ body .bg-div {
 }
 
 .nav-container .dark-mode-container .dark-mode-box{
-    height: 4dvh;
-    width: 7.0588dvh;
+    height: 4svh;
+    width: 7.0588svh;
     position: relative;
 }
 
@@ -188,8 +188,8 @@ body .bg-div {
 .dark-mode-box .slider{
     position: absolute;
     cursor: pointer;
-    height: 4dvh;
-    width: 7.0588dvh;
+    height: 4svh;
+    width: 7.0588svh;
     top: 0;
     left: 0;
     right: 0;
@@ -202,10 +202,10 @@ body .bg-div {
 .dark-mode-box .slider:before{
     position: absolute;
     content: "";
-    width: 3.0588dvh;
-    height: 3.0588dvh;
-    left: 0.470584dvh;
-    bottom: 0.470584dvh;
+    width: 3.0588svh;
+    height: 3.0588svh;
+    left: 0.470584svh;
+    bottom: 0.470584svh;
     background-color:#e4b90f;
     -webkit-transition: .4s;
     transition: .4s;
@@ -213,11 +213,11 @@ body .bg-div {
 
 
 .dark-mode-box .set-dark-mode:checked + .slider:before{
-    -webkit-transform: translate(2.5588dvh, -0.5dvh);
-    -ms-transform: translate(2.5588dvh, -0.5dvh);
-    transform: translate(2.5588dvh, -0.5dvh);
+    -webkit-transform: translate(2.5588svh, -0.5svh);
+    -ms-transform: translate(2.5588svh, -0.5svh);
+    transform: translate(2.5588svh, -0.5svh);
     background-color: transparent;
-    box-shadow: 0.5dvh 0.5dvh 0 0 darkgrey;
+    box-shadow: 0.5svh 0.5svh 0 0 darkgrey;
 }
 
 .dark-mode-box .set-dark-mode:not(:checked) + .slider:before{
@@ -226,18 +226,18 @@ body .bg-div {
 
 @keyframes shine {
     0% {
-        box-shadow: 0 0 1rem 0.5dvh #e4b90f;
+        box-shadow: 0 0 1rem 0.5svh #e4b90f;
     }
     50% {
-        box-shadow: 0 0 1rem 1dvh #e4b90f;
+        box-shadow: 0 0 1rem 1svh #e4b90f;
     }
     100% {
-        box-shadow: 0 0 1rem 0.5dvh #e4b90f;
+        box-shadow: 0 0 1rem 0.5svh #e4b90f;
     }
 }
 
 .dark-mode-box .slider.round{
-    border-radius: 4dvw;
+    border-radius: 4svw;
 }
 
 .dark-mode-box .slider.round:before{
@@ -283,13 +283,13 @@ body .bg-div {
 .personal-info-box .box-styler .personal-title h2{
     color: var(--alt-text);
     font-size: 2rem;
-    margin: 1dvw;
+    margin: 1svw;
 }
 
 .personal-info-box .box-styler .personal-title h3{
     color: var(--alt-text);
     font-size: 1.6rem;
-    margin: 1dvw;
+    margin: 1svw;
 }
 
 .personal-info-box .box-styler .image-portrait{
@@ -339,7 +339,7 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    margin-bottom: 3dvh;
+    margin-bottom: 3svh;
 }
 
 .personal-info-box .information-grid .socialmedia-info img{
@@ -352,7 +352,7 @@ body .bg-div {
     flex-direction: row;
     justify-content: center;
     margin: 0px;
-    padding-bottom: 1dvw;
+    padding-bottom: 1svw;
 }
 .personal-info-box .information-grid .socialmedia-icons a{
     display: flex;
@@ -363,7 +363,7 @@ body .bg-div {
 
 
 .home{
-    height: 100dvh;
+    height: 100svh;
     background-color: var(--primary-background);
     box-sizing: border-box;
 }
@@ -378,7 +378,7 @@ body .bg-div {
 .home-container h1{
     contain: content;
     text-transform: uppercase;
-    font-size: 4dvh;
+    font-size: 4svh;
     font-family: "Archivo Black", "Archivo", sans-serif;
     text-align: center;
 }
@@ -431,7 +431,7 @@ body .bg-div {
 
 .portfolio .portfolio-container h1{
     text-align: center;
-    font-size: 5dvw;
+    font-size: 5svw;
     color: var(--primary-color);
     margin: 10px
 }
@@ -459,13 +459,13 @@ body .bg-div {
 
 .portfolio article h3{
     font-size: 1.5rem;
-    margin: 2dvh 2dvw 2dvh 2dvw;
+    margin: 2svh 2svw 2svh 2svw;
     color: var(--secondary-color);
 }
 
 .portfolio article h4{
     font-size: 2rem;
-    margin: 2dvh 2dvw 2dvh 2dvw;
+    margin: 2svh 2svw 2svh 2svw;
     color: var(--secondary-color);
 }
 
@@ -478,7 +478,7 @@ body .bg-div {
 }
 
 .portfolio article ul{
-    margin: 4dvh 2dvw 8dvh 2dvw;
+    margin: 4svh 2svw 8svh 2svw;
 }
 
 .portfolio article ul li{
@@ -488,37 +488,37 @@ body .bg-div {
 }
 
 .portfolio article p{
-    margin: 2dvh 2dvw 2dvh 2dvw;
+    margin: 2svh 2svw 2svh 2svw;
     color: var(--secondary-color);
     font-size: 1.5rem;
 }
 
 .portfolio .button-see-more-article-1{
     display: flex;
-    margin-left: 2dvw;
-    margin-right: 2dvw;
-    margin-bottom: 2dvh;
+    margin-left: 2svw;
+    margin-right: 2svw;
+    margin-bottom: 2svh;
     width: fit-content;
 }
 
 .portfolio .button-see-more-article-2{
     display: flex;
-    margin-left: 2dvw;
-    margin-right: 2dvw;
-    margin-bottom: 2dvh;
+    margin-left: 2svw;
+    margin-right: 2svw;
+    margin-bottom: 2svh;
     width: fit-content;
 }
 
 .portfolio .button-see-more-article-3{
     display: flex;
-    margin-left: 2dvw;
-    margin-right: 2dvw;
-    margin-bottom: 2dvh;
+    margin-left: 2svw;
+    margin-right: 2svw;
+    margin-bottom: 2svh;
     width: fit-content;
 }
 
 .portfolio .button-see-more-article-1 p{
-    font-size: 3dvh;
+    font-size: 3svh;
     cursor: pointer;
     width: auto;
     border: 2px solid var(--secondary-color);
@@ -526,7 +526,7 @@ body .bg-div {
 }
 
 .portfolio .button-see-more-article-2 p{
-    font-size: 3dvh;
+    font-size: 3svh;
     cursor: pointer;
     width: auto;
     border: 2px solid var(--secondary-color);
@@ -534,7 +534,7 @@ body .bg-div {
 }
 
 .portfolio .button-see-more-article-3 p{
-    font-size: 3dvh;
+    font-size: 3svh;
     cursor: pointer;
     width: auto;
     border: 2px solid var(--secondary-color);
@@ -569,7 +569,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 4dvh 2dvw 8dvh 2dvw;
+    margin: 4svh 2svw 8svh 2svw;
 
 }
 
@@ -584,23 +584,23 @@ body .bg-div {
     height: 10vh;
     width: auto;
     aspect-ratio: 1/1;
-    margin: 2dvh 2dvw 2dvh 2dvw;
+    margin: 2svh 2svw 2svh 2svw;
 }
 
 .portfolio .links-article .repository-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: var(--button-color) 0.5dvw solid;
-    border-radius: 8dvw;
+    border: var(--button-color) 0.5svw solid;
+    border-radius: 8svw;
 }
 
 .portfolio .links-article .web-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    border: var(--button-color) 0.5dvw solid;
-    border-radius: 8dvw;
+    border: var(--button-color) 0.5svw solid;
+    border-radius: 8svw;
 }
 
 .footer-box{
@@ -610,8 +610,8 @@ body .bg-div {
     height: fit-content;
     background-color: #756e76;
     margin: 0px;
-    padding-top: 1dvh;
-    padding-bottom: 1dvh;
+    padding-top: 1svh;
+    padding-bottom: 1svh;
 }
 
 .footer-box .copyright-text{
@@ -626,7 +626,7 @@ body .bg-div {
 .footer-box .footer-button-box{
     position: static;
     left: 25px;
-    margin-right: 2dvw;
+    margin-right: 2svw;
     
 }
 
@@ -672,11 +672,11 @@ body .bg-div {
 @keyframes animate {
     0%
     {
-        transform: translateY(100dvh) scale(0);
+        transform: translateY(100svh) scale(0);
     }
     100%
     {
-        transform: translateY(-5dvh) scale(1);
+        transform: translateY(-5svh) scale(1);
     }
 }
 
@@ -713,8 +713,8 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -38dvw;
-        left: 53dvw;
+        bottom: -38svw;
+        left: 53svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
         border-radius: 10px;
@@ -724,11 +724,11 @@ body .bg-div {
     .nav-container .hamburger-menu.active .nav-links-box{
         display: flex;
         flex-direction: column;
-        font-size: 7dvw;
+        font-size: 7svw;
     }
     
     .nav-container .hamburger-menu.active .nav-links-box li{
-        margin: 2dvw;
+        margin: 2svw;
     }
     
     .nav-container .hamburger-menu .nav-links-box{
@@ -760,8 +760,8 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -38dvw;
-        left: 53dvw;
+        bottom: -38svw;
+        left: 53svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
         border-radius: 10px;
@@ -771,11 +771,11 @@ body .bg-div {
     .nav-container .hamburger-menu.active .nav-links-box{
         display: flex;
         flex-direction: column;
-        font-size: 7dvw;
+        font-size: 7svw;
     }
     
     .nav-container .hamburger-menu.active .nav-links-box li{
-        margin: 2dvw;
+        margin: 2svw;
     }
     
     .nav-container .hamburger-menu .nav-links-box{
@@ -806,7 +806,7 @@ body .bg-div {
     }
 
     .portfolio .portfolio-container h1{
-        font-size: 9dvw;
+        font-size: 9svw;
     }
 }
 
@@ -817,15 +817,15 @@ body .bg-div {
     /* CSS DEL NAVBAR */
 
     .nav-container{
-        height: 7dvh;
+        height: 7svh;
     }
 
     .nav-container .icon-family h1{
-        font-size: 4dvh;
+        font-size: 4svh;
     }
 
     .nav-container .hamburger-menu.active{
-        bottom: -39dvw;
+        bottom: -39svw;
     }
 
     .personal-info-box{
@@ -837,7 +837,7 @@ body .bg-div {
     }
 
     .home-container h1{
-        font-size: 2.5dvh;
+        font-size: 2.5svh;
     }
 }
 
@@ -848,6 +848,6 @@ body .bg-div {
     /* CSS DEL NAVBAR */
 
     .nav-container .icon-family h1{
-        font-size: 3dvh;
+        font-size: 3svh;
     }
 }

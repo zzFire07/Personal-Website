@@ -56,7 +56,7 @@ var colorSwitch; // Variable para el interruptor DARK MODE
   // Esta funcion mueve la caja con mis datos personales, para que este visible solo un tramo.
   function movimientoPersonalBox() {
 
-  var homeHeight = window.innerHeight / 1.1; // Obtiene la altura de la ventana y se le agrega margen
+  var homeHeight = window.visualViewport.height / 1.1; // Obtiene la altura de la ventana y se le agrega margen
   var boxStylerHeight = boxStylerContainer.getBoundingClientRect().height; // Obtiene la altura de la caja de estilos de la caja personal box
   var maxOffset = homeHeight - boxStylerHeight; // Establece la distancia maxima que se puede mover la caja
 
