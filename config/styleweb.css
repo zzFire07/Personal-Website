@@ -116,9 +116,9 @@ body .bg-div {
 
 .nav-container .icon-family h1{
     font-family: var(--nav_title-font);
-    font-size: 6svh;
-    margin-inline-start: 1.5svh;
-    margin-inline-end: 1.5svh;
+    font-size: 5.5svh;
+    margin-inline-start: 1.4svh;
+    margin-inline-end: 1.4svh;
     color: var(--primary-color);
     cursor: default;
 }
@@ -149,7 +149,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 4svh;
+    font-size: 3.5svh;
     margin: 0px;
     padding-inline-start: 0px;
     list-style-type: none;
@@ -747,7 +747,7 @@ body .bg-div {
 
 /* media query for wide dispositives less than 700px of width */
 
-@media (max-width: 700px){
+@media (max-width: 750px){
     
     /* CSS DEL HAMBURGER MENU */
     
