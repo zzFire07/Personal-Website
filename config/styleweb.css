@@ -120,11 +120,19 @@ body .bg-div {
 
 .nav-container .icon-family h1{
     font-family: var(--nav_title-font);
+    text-decoration: none;
     font-size: 5.5svh;
+    margin-top: 0;
+    margin-bottom: 0;
     margin-inline-start: 1.4svh;
     margin-inline-end: 1.4svh;
     color: var(--primary-color);
     cursor: default;
+}
+.nav-container .icon-family a{
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
 }
 
 .nav-container .icon-family .house-icon{
