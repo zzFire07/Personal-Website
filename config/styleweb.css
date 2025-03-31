@@ -127,7 +127,6 @@ body .bg-div {
     margin-inline-start: 1.4svh;
     margin-inline-end: 1.4svh;
     color: var(--primary-color);
-    cursor: default;
 }
 .nav-container .icon-family a{
     text-decoration: none;
