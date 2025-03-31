@@ -44,7 +44,8 @@ body{
 }
 
 body .bg-div {
-
+    width: 100%;
+    min-width: 330px;
     overflow:hidden;
 }
 
@@ -96,7 +97,8 @@ body .bg-div {
 
 .nav-container
 {
-    position: relative;
+    position: fixed;
+    width: 100%;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -104,6 +106,8 @@ body .bg-div {
     height: 8svh;
     background-color: var(--secondary-background);
     font-size: 1vw;
+    z-index: 101;
+    border-bottom: 3px solid var(--primary-background);
 }
 
 .nav-container .icon-family{
@@ -249,19 +253,18 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     padding-bottom: 400;
+    margin-top: 8svh;
 }
 
 
 .personal-info-box{
     display: flex;
-    position: fixed;
     flex-direction: column;
     width: 30%;
     margin-left: 1%;
-    margin-top: 1%;
-    justify-content: center;
+    margin-top: 40px;
     z-index: 100;
-    transition: none;
+    transition: 0.02s;
 }
 
 .personal-info-box *{
@@ -363,22 +366,26 @@ body .bg-div {
 
 
 .home{
+    display: flex;
+    flex-direction: row;
     height: 100svh;
     background-color: var(--primary-background);
     box-sizing: border-box;
 }
 
 .home-container{
+    display: flex;
     z-index: 3;
-    position: absolute;
     color:var(--primary-color);
-    right: 5px;
-    width: 65%;
+    width: 70%;
+    justify-content: center;
     animation: neon 3s infinite;
 }
 .home-container h1{
+    margin-top: 35px;
+    width: 75%;
     text-transform: uppercase;
-    font-size: 4svh;
+    font-size: 3svh;
     font-family: "Archivo Black", "Archivo", sans-serif;
     text-align: center;
 }
@@ -826,6 +833,10 @@ body .bg-div {
 
     /* CSS DEL NAVBAR */
 
+    .wrapper{
+        margin-top: 7svh;
+    }
+
     .nav-container{
         height: 7svh;
     }
@@ -847,7 +858,7 @@ body .bg-div {
     }
 
     .home-container h1{
-        font-size: 2.5svh;
+        font-size: 2svh;
     }
 
     .personal-info-box .box-styler .personal-title h3{
@@ -855,6 +866,67 @@ body .bg-div {
         font-size: 1.2rem;
         margin: 1svw;
     }
+
+    .nav-container .dark-mode-container .dark-mode-box{
+        height: 3svh;
+        width: 5.2941svh;
+        position: relative;
+    }
+    
+    .dark-mode-box .slider{
+        position: absolute;
+        cursor: pointer;
+        height: 3svh;
+        width: 5.2941svh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color:#FFFFFF;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .dark-mode-box .slider:before{
+        position: absolute;
+        content: "";
+        width: 2.2941svh;
+        height: 2.2941svh;
+        left: 0.352938svh;
+        bottom: 0.352938svh;
+        background-color:#e4b90f;
+        -webkit-transition: .4s;
+        transition: .4s;
+    }
+    
+    .dark-mode-box .set-dark-mode:checked + .slider:before{
+        -webkit-transform: translate(1.9191svh, -0.375svh);
+        -ms-transform: translate(1.9191svh, -0.375svh);
+        transform: translate(1.9191svh, -0.375svh);
+        background-color: transparent;
+        box-shadow: 0.375svh 0.375svh 0 0 darkgrey;
+    }
+    
+    .dark-mode-box .set-dark-mode:not(:checked) + .slider:before{
+        animation: shine 1.2s ease-in-out infinite;
+    }
+    
+    @keyframes shine {
+        0% {
+            box-shadow: 0 0 1rem 0.375svh #e4b90f;
+        }
+        50% {
+            box-shadow: 0 0 1rem 0.75svh #e4b90f;
+        }
+        100% {
+            box-shadow: 0 0 1rem 0.375svh #e4b90f;
+        }
+    }
+    
+    .dark-mode-box .slider.round{
+        border-radius: 3svw;
+    }
+    
 
 
 }

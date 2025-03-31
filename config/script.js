@@ -58,20 +58,16 @@ var colorSwitch; // Variable para el interruptor DARK MODE
 
   var homeHeight = homeContainer.getBoundingClientRect().height; // Obtiene la altura de la ventana
 
-      homeHeight = homeHeight / 1.05; // Corrige la altura de la ventana para que haya mas margen
+      homeHeight = homeHeight / 1.1; // Corrige la altura de la ventana para que haya mas margen
 
   var boxStylerHeight = boxStylerContainer.getBoundingClientRect().height; // Obtiene la altura de la caja de estilos de la caja personal box
   var maxOffset = homeHeight - boxStylerHeight; // Establece la distancia maxima que se puede mover la caja
 
-  var initialOffset = personalBox.getBoundingClientRect().offsetTop; // Obtiene la distancia entre la caja y el borde superior de la pagina
   var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
 
 if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la distancia maxima, se mueve la caja
-  personalBox.style.position = 'fixed';
-  personalBox.style.padding =  '0px';
-  personalBox.style.top = initialOffset + scrollPosition + 'px';
+  personalBox.style.paddingTop = scrollPosition + 'px';
 } else {  // Si la posicion del scroll es mayor a la distancia maxima, se fija la caja en la distancia maxima
-  personalBox.style.position = 'absolute';
   personalBox.style.paddingTop = maxOffset + 'px';
 }
 }
@@ -80,7 +76,7 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
   function movimientoSectionSeparator() {
 
       var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
-      let correctorDeAlturaScroll = scrollPosition * 1.1; // Corrige la altura de la pagina para que el scroll sea mas preciso
+      let correctorDeAlturaScroll = scrollPosition * 1.05; // Corrige la altura de la pagina para que el scroll sea mas preciso
 
       var webHeight = bigDiv.getBoundingClientRect().height; // Obtiene la altura de la pagina.
 
