@@ -129,6 +129,8 @@ body .bg-div {
     color: var(--primary-color);
 }
 .nav-container .icon-family a{
+    display: flex;
+    align-items: center;
     text-decoration: none;
     height: 100%;
     width: 100%;
