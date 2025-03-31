@@ -95,6 +95,10 @@ body .bg-div {
     left: 35%;
 }
 
+.nav-header{
+    width: 100%;
+}
+
 .nav-container
 {
     position: fixed;
