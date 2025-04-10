@@ -383,7 +383,7 @@ body .bg-div {
     height: 100svh;
     background-color: var(--primary-background);
     box-sizing: border-box;
-    min-height: 600px;
+    min-height: 660px;
 }
 
 .home-container{
