@@ -111,7 +111,6 @@ body .bg-div {
     background-color: var(--secondary-background);
     font-size: 1vw;
     z-index: 101;
-    border-bottom: 3px solid var(--primary-background);
 }
 
 .nav-container .icon-family{
@@ -743,7 +742,7 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -38svw;
+        bottom: -14.4svh;
         left: 53svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
@@ -754,11 +753,11 @@ body .bg-div {
     .nav-container .hamburger-menu.active .nav-links-box{
         display: flex;
         flex-direction: column;
-        font-size: 7svw;
+        font-size: 4.2svh;
     }
     
     .nav-container .hamburger-menu.active .nav-links-box li{
-        margin: 2svw;
+        margin: 1svh;
     }
     
     .nav-container .hamburger-menu .nav-links-box{
@@ -790,7 +789,7 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -38svw;
+        bottom: -14.4svh;
         left: 53svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
@@ -801,11 +800,11 @@ body .bg-div {
     .nav-container .hamburger-menu.active .nav-links-box{
         display: flex;
         flex-direction: column;
-        font-size: 7svw;
+        font-size: 4.2svh;
     }
     
     .nav-container .hamburger-menu.active .nav-links-box li{
-        margin: 2svw;
+        margin: 1svh;
     }
     
     .nav-container .hamburger-menu .nav-links-box{
@@ -859,7 +858,11 @@ body .bg-div {
     }
 
     .nav-container .hamburger-menu.active{
-        bottom: -39svw;
+        bottom: -11.5svh;
+    }
+
+    .nav-container .hamburger-menu.active .nav-links-box{
+        font-size: 3svh;
     }
 
     .personal-info-box{
@@ -952,5 +955,9 @@ body .bg-div {
 
     .nav-container .icon-family h1{
         font-size: 3svh;
+    }
+
+    .home-container h1{
+        font-size: 1.8svh;
     }
 }
