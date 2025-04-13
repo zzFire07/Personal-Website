@@ -173,7 +173,7 @@ body .bg-div {
 
 .nav-container .nav-links-box li a{
     text-decoration: none;
-    padding-inline-end: 9px;
+    padding-inline-end: 22px;
     color:var(--secondary-color);
 }
 
@@ -509,6 +509,7 @@ body .bg-div {
     margin: 2svh 2svw 2svh 2svw;
     color: var(--secondary-color);
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .portfolio .button-see-more-article-1{
@@ -722,15 +723,17 @@ body .bg-div {
             transform:translateX(-10px) translateY(-10px)
         }
 }
-/* media query for small dispositives less than 1100 of width */
-@media (max-width: 1100px){
 
-    
-    .nav-links-box li a{
-        padding-inline-end: 8px;
-    }
-    
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+    
+.left { grid-area: 1 / 1 / 2 / 2; }
+.right { grid-area: 1 / 2 / 2 / 3; }
 
 @media (max-aspect-ratio: 4/5){
 
@@ -739,12 +742,16 @@ body .bg-div {
     .nav-container .nav-hamburger-box{
         display: block;
     }
+
+    .nav-container .nav-links-box li a{
+        padding-inline-end: 0px;
+    }
     
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -14.4svh;
-        left: 53svw;
+        bottom: -14.15svh;
+        left: 45svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
         border-radius: 10px;
@@ -786,12 +793,16 @@ body .bg-div {
     .nav-container .nav-hamburger-box{
         display: block;
     }
+
+    .nav-container .nav-links-box li a{
+        padding-inline-end: 0px;
+    }
     
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -14.4svh;
-        left: 53svw;
+        bottom: -14.5svh;
+        left: 45svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
         border-radius: 10px;
@@ -859,7 +870,8 @@ body .bg-div {
     }
 
     .nav-container .hamburger-menu.active{
-        bottom: -11.5svh;
+        bottom: -11.8svh;
+        left: 55svw;
     }
 
     .nav-container .hamburger-menu.active .nav-links-box{
