@@ -606,32 +606,51 @@ body .bg-div {
 
 .portfolio .links-article a{
     display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
 .portfolio .links-article img{
-    height: 10vh;
-    width: auto;
+    height: auto;
+    width: 80%;
     aspect-ratio: 1/1;
     margin: 2svh 2svw 2svh 2svw;
 }
 
 .portfolio .links-article .repository-link{
     display: flex;
+    width: 40%;
     align-items: center;
     justify-content: center;
-    border: var(--button-color) 0.5svw solid;
-    border-radius: 8svw;
+    border: var(--secondary-color) 0.2svw solid;
+    border-radius: 3svw;
+}
+
+.portfolio .links-article .repository-link a p{
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 4svw;
+}
+
+.portfolio .links-article .web-link a p{
+    width: 100%;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    font-size: 4svw;
 }
 
 .portfolio .links-article .web-link{
     display: flex;
+    width: 40%;
     align-items: center;
     justify-content: center;
-    border: var(--button-color) 0.5svw solid;
-    border-radius: 8svw;
+    border: var(--secondary-color) 0.2svw solid;
+    border-radius: 3svw;
 }
 
 .footer-box{
@@ -726,14 +745,40 @@ body .bg-div {
 
 .tech-grid {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
     
-.left { grid-area: 1 / 1 / 2 / 2; }
-.right { grid-area: 1 / 2 / 2 / 3; }
+.left { 
+    grid-area: 1 / 1 / 2 / 2; 
+    width: 100%;
+    overflow: hidden;
+}
+.right { 
+    grid-area: 1 / 2 / 2 / 3; 
+    width: 100%;
+    overflow: hidden;
+}
+
+.tech-grid .left p{
+    width: 100%;
+    font-size: 5.5svw; 
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin: 0px;
+}
+.tech-grid .right p{
+    width: 100%;
+    font-size: 5.5svw; 
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    margin: 0px;
+}
 
 @media (max-aspect-ratio: 4/5){
 
