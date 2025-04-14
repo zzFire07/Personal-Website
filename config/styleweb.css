@@ -765,7 +765,7 @@ body .bg-div {
 
 .tech-grid .left p{
     width: 100%;
-    font-size: 5.5svw; 
+    font-size: 2.7rem; 
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -773,7 +773,7 @@ body .bg-div {
 }
 .tech-grid .right p{
     width: 100%;
-    font-size: 5.5svw; 
+    font-size: 2.7rem; 
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
@@ -832,6 +832,13 @@ body .bg-div {
 /* media query for wide dispositives less than 700px of width */
 
 @media (max-width: 750px){
+
+    .tech-grid .left p{
+        font-size: 5.5svw; 
+    }
+    .tech-grid .right p{
+        font-size: 5.5svw; 
+    }
     
     /* CSS DEL HAMBURGER MENU */
     
