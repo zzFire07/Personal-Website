@@ -512,6 +512,10 @@ body .bg-div {
     padding-bottom: 0.8rem;
 }
 
+#portfolio-target{
+    height: 6svh;
+}
+
 .portfolio .portfolio-container{
     position: relative;
     display: flex;
@@ -523,7 +527,8 @@ body .bg-div {
     text-align: center;
     font-size: 5svw;
     color: var(--primary-color);
-    margin: 10px
+    margin: 20px;
+    margin-bottom: 4svh;
 }
 
 .portfolio article{
@@ -869,7 +874,7 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -14.15svh;
+        top: 8svh;
         left: 45svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
@@ -905,7 +910,7 @@ body .bg-div {
 
 /* media query for wide dispositives less than 700px of width */
 
-@media (max-width: 750px){
+@media (max-width: 810px){
 
     .tech-grid .left p{
         font-size: 5.5svw; 
@@ -927,7 +932,7 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -14.5svh;
+        top: 8svh;
         left: 45svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;

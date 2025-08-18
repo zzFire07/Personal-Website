@@ -1,0 +1,55 @@
+section .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100svh;
+    height: auto;
+}
+
+
+.home h1 {
+    font-size: 4.5rem;
+    font-family: "Bitcount Prop Single";
+    font-weight: lighter;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+    padding-top: 5svh;
+    padding-bottom: 1.5svh;
+    padding-right: 12svw;
+    padding-left: 12svw;
+}
+
+.home h2 {
+    font-size: 3.5rem;
+    font-family: "Bitcount Prop Single";
+    font-weight: lighter;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+    padding-top: 0svh;
+    padding-bottom: 0svh;
+    padding-right: 12svw;
+    padding-left: 12svw;
+}
+
+.home .blog-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 2svh;
+    margin-left: 5svw;
+}
+
+.home .blog-posts-title {
+    font-size: 3rem;
+    font-family: "Bitcount Prop Single";
+    font-weight: lighter;
+    color: var(--primary-color);
+    align-self: flex-start;
+    margin: 0;
+    padding-top: 16svh;
+    padding-bottom: 4svh;
+    padding-right: 0svw;
+    padding-left: 0svw;
+}
