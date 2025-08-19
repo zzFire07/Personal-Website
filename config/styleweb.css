@@ -11,6 +11,7 @@
     --secondary-background: #2E5E5E;
     --terciary-background: #85C7F2;
     --terciary-background_inverted: #560860;
+    --aside-box-background: #00395f;
     --button-color: #222222;
     --button-text: #FAD6A5;
     --alt-text: #bb4c07;
@@ -23,8 +24,9 @@
     --secondary-color: #97B9CF; /* (un tono azul grisáceo) */
     --primary-background: #121212; /* (un color de fondo principal oscuro) */
     --secondary-background: #1E1E1E; /* (un color de fondo secundario oscuro) */
-    --terciary-background: #731A88; /* (un color de fondo terciario oscuro) */
-    --terciary-background_inverted: #6ac9f2; /* (un color de fondo terciario oscuro) */
+    --terciary-background: #560860; /* (un color de fondo terciario oscuro) */
+    --terciary-background_inverted: #85C7F2; /* (un color de fondo terciario oscuro) */
+    --aside-box-background: #310a39; /* (un color de fondo para el aside oscuro) */
     --button-color: #F0F0F0;
     --button-text: #121212;
     --alt-text: #FFD700;
@@ -360,7 +362,7 @@ body .bg-div {
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: var(--terciary-background);
+    background-color: var(--aside-box-background);
     border: 0.2em solid #000000;
     border-radius: 16px;
 }
@@ -910,7 +912,7 @@ body .bg-div {
 
 /* media query for wide dispositives less than 700px of width */
 
-@media (max-width: 810px){
+@media (max-width: 930px){
 
     .tech-grid .left p{
         font-size: 5.5svw; 
