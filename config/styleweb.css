@@ -11,6 +11,7 @@
     --secondary-background: #2E5E5E;
     --terciary-background: #85C7F2;
     --terciary-background_inverted: #560860;
+    --aside-box-background: #00395f;
     --button-color: #222222;
     --button-text: #FAD6A5;
     --alt-text: #bb4c07;
@@ -23,8 +24,9 @@
     --secondary-color: #97B9CF; /* (un tono azul grisáceo) */
     --primary-background: #121212; /* (un color de fondo principal oscuro) */
     --secondary-background: #1E1E1E; /* (un color de fondo secundario oscuro) */
-    --terciary-background: #731A88; /* (un color de fondo terciario oscuro) */
-    --terciary-background_inverted: #6ac9f2; /* (un color de fondo terciario oscuro) */
+    --terciary-background: #560860; /* (un color de fondo terciario oscuro) */
+    --terciary-background_inverted: #85C7F2; /* (un color de fondo terciario oscuro) */
+    --aside-box-background: #310a39; /* (un color de fondo para el aside oscuro) */
     --button-color: #F0F0F0;
     --button-text: #121212;
     --alt-text: #FFD700;
@@ -113,7 +115,7 @@ body .bg-div {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: var(--primary-background);
+  background: #172424;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -121,14 +123,14 @@ body .bg-div {
 
 .nav-hamburger-box {
     position: relative;
-    width: 3rem;
-    height: 3rem;
+    width: 6svh;
+    height: 6svh;
     cursor: pointer;
     display: none;
 }
 
 .hamburger-line{
-    height: 5px;
+    height: 0.7svh;
     width: 100%;
     background-color: var(--primary-color);
     border-radius: 25px;
@@ -188,7 +190,8 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     height: 100%;
-    margin-left: 0.5rem;
+    margin-left: 0.5svw;
+    margin-right: 2svw;
 }
 
 .nav-container .icon-family h1{
@@ -243,7 +246,7 @@ body .bg-div {
 
 .nav-container .nav-links-box li a{
     text-decoration: none;
-    padding-inline-end: 22px;
+    padding-inline-end: 3svw;
     color:var(--secondary-color);
 }
 
@@ -360,7 +363,7 @@ body .bg-div {
     align-items: center;
     width: 100%;
     height: auto;
-    background-color: var(--terciary-background);
+    background-color: var(--aside-box-background);
     border: 0.2em solid #000000;
     border-radius: 16px;
 }
@@ -368,19 +371,21 @@ body .bg-div {
 .personal-info-box .box-styler .personal-title h2{
     color: var(--alt-text);
     font-size: 2rem;
-    margin: 1svw;
+    margin: 1svh;
+    margin-bottom: 0svh;
 }
 
 .personal-info-box .box-styler .personal-title h3{
     color: var(--alt-text);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: 1svw;
+    margin-top: 0svh;
+    margin-bottom: 3svh;
 }
 
 .personal-info-box .box-styler .image-portrait{
     display: flex;
     justify-content: left;
-    margin-left: 15px;
 }
 
 .personal-info-box .box-styler .image-portrait img{
@@ -391,25 +396,22 @@ body .bg-div {
 
 }
 
-.personal-info-box .box-styler .information-grid h2{
-    color: var(--primary-color);
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
 
 .personal-info-box .information-grid{
     display:flex;
     flex-direction: column;
-    margin-top: 0.2rem;
-}
-
-.personal-info-box .box-styler .aboutme-info{
-    margin-bottom: 0.5rem;
+    margin-top: 3svh;
 }
 
 .personal-info-box .box-styler .information-grid h2{
+    color: var(--primary-color);
+    text-align: center;
     font-size: 2rem;
+    margin-top: 0svh;
+    margin-bottom: 0svh;
+}
+.personal-info-box .box-styler .aboutme-info{
+    margin-bottom: 2svh;
 }
 
 .personal-info-box .box-styler .aboutme-info p{
@@ -466,12 +468,16 @@ body .bg-div {
     animation: neon 3s infinite;
 }
 .home-container h1{
-    margin-top: 35px;
+    margin-top: 8svh;
     width: 75%;
     text-transform: uppercase;
-    font-size: 3svh;
+    font-size: 3svw;
     font-family: "Archivo Black", "Archivo", sans-serif;
     text-align: center;
+}
+
+.home-container .subtitle{
+    margin-top: 0svh;
 }
 
 .bubbles-container{
@@ -512,6 +518,10 @@ body .bg-div {
     padding-bottom: 0.8rem;
 }
 
+#portfolio-target{
+    height: 6svh;
+}
+
 .portfolio .portfolio-container{
     position: relative;
     display: flex;
@@ -523,7 +533,8 @@ body .bg-div {
     text-align: center;
     font-size: 5svw;
     color: var(--primary-color);
-    margin: 10px
+    margin: 20px;
+    margin-bottom: 4svh;
 }
 
 .portfolio article{
@@ -869,7 +880,7 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -14.15svh;
+        top: 8svh;
         left: 45svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
@@ -902,10 +913,9 @@ body .bg-div {
 
 }
 
-
 /* media query for wide dispositives less than 700px of width */
 
-@media (max-width: 750px){
+@media (max-width: 930px){
 
     .tech-grid .left p{
         font-size: 5.5svw; 
@@ -918,16 +928,22 @@ body .bg-div {
     
     .nav-container .nav-hamburger-box{
         display: block;
+        width: 6svh;
+        height: 6svh;
+    }
+
+    .nav-container .hamburger-line{
+        height: 0.7svh;
     }
 
     .nav-container .nav-links-box li a{
-        padding-inline-end: 0px;
-    }
+    padding-inline-end: 2.5svw;
+}
     
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        bottom: -14.5svh;
+        top: 8svh;
         left: 45svw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
@@ -1026,12 +1042,6 @@ body .bg-div {
         font-size: 2svh;
     }
 
-    .personal-info-box .box-styler .personal-title h3{
-        color: var(--alt-text);
-        font-size: 1.2rem;
-        margin: 1svw;
-    }
-
     .nav-container .dark-mode-container .dark-mode-box{
         height: 3svh;
         width: 5.2941svh;
@@ -1110,3 +1120,14 @@ body .bg-div {
         font-size: 1.8svh;
     }
 }
+
+/* media query for low length and ultra wide dispositives */
+    @media (min-aspect-ratio: 2/1) {
+        .nav-container .nav-hamburger-box {
+            display: none;
+        }
+
+        .nav-container .hamburger-menu .nav-links-box {
+            display: flex;
+        }
+    }

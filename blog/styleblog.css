@@ -1,0 +1,86 @@
+section .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100svh;
+    height: auto;
+}
+
+
+.home h1 {
+    font-size: 6svh;
+    font-family: "Bitcount Prop Single";
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+    padding-top: 7svh;
+    padding-bottom: 1.5svh;
+    padding-right: 12svw;
+    padding-left: 12svw;
+}
+
+.home h2 {
+    font-size: 3.5svh;
+    font-family: "Bitcount Prop Single";
+    font-weight: lighter;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 0;
+    padding-top: 0svh;
+    padding-bottom: 0svh;
+    padding-right: 12svw;
+    padding-left: 12svw;
+}
+
+.home .blog-container {
+    display: flex;
+    width: fit-content;
+    flex-direction: column;
+    margin-top: 10svh;
+    margin-bottom: 10svh;
+    margin-left: 6svw;
+    margin-right: 6svw;
+    border: 1px solid var(--primary-color);
+    border-radius: 2svw;
+}
+
+.home .blog-posts-title {
+    font-size: 5svh;
+    font-family: "Bitcount Prop Single";
+    font-weight: lighter;
+    color: var(--primary-color);
+    text-align: start;
+    margin: 0 0 0 0;
+    padding-top: 4svh;
+    padding-bottom: 4svh;
+    padding-left: 3svw;
+    padding-right: 3svw;
+}
+
+.home .blog-posts {
+    display: flex;
+    flex-direction: column;
+    gap: 4svh;
+    padding-top: 4svh;
+    padding-bottom: 4svh;
+    padding-left: 3svw;
+    padding-right: 3svw;
+    border-top: 1px solid var(--primary-color);
+}
+
+.home .blog-post {
+    display: flex;
+    flex-direction: row;
+    border: 0.3rem solid var(--terciary-background_inverted);
+    background-color: var(--secondary-background);
+    border-radius: 4svh;
+    padding-left: 2rem;
+}
+
+.home .blog-post img {
+    margin-top: 2svh;
+    margin-bottom: 2svh;
+    width: 30svw;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+}
