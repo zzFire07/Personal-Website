@@ -115,7 +115,7 @@ body .bg-div {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: var(--primary-background);
+  background: #172424;
   left: 0;
   top: 0;
   border-radius: 10px;
@@ -123,14 +123,14 @@ body .bg-div {
 
 .nav-hamburger-box {
     position: relative;
-    width: 3rem;
-    height: 3rem;
+    width: 6svh;
+    height: 6svh;
     cursor: pointer;
     display: none;
 }
 
 .hamburger-line{
-    height: 5px;
+    height: 0.7svh;
     width: 100%;
     background-color: var(--primary-color);
     border-radius: 25px;
@@ -190,7 +190,8 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     height: 100%;
-    margin-left: 0.5rem;
+    margin-left: 0.5svw;
+    margin-right: 2svw;
 }
 
 .nav-container .icon-family h1{
@@ -245,7 +246,7 @@ body .bg-div {
 
 .nav-container .nav-links-box li a{
     text-decoration: none;
-    padding-inline-end: 22px;
+    padding-inline-end: 3svw;
     color:var(--secondary-color);
 }
 
@@ -370,19 +371,21 @@ body .bg-div {
 .personal-info-box .box-styler .personal-title h2{
     color: var(--alt-text);
     font-size: 2rem;
-    margin: 1svw;
+    margin: 1svh;
+    margin-bottom: 0svh;
 }
 
 .personal-info-box .box-styler .personal-title h3{
     color: var(--alt-text);
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     margin: 1svw;
+    margin-top: 0svh;
+    margin-bottom: 3svh;
 }
 
 .personal-info-box .box-styler .image-portrait{
     display: flex;
     justify-content: left;
-    margin-left: 15px;
 }
 
 .personal-info-box .box-styler .image-portrait img{
@@ -393,25 +396,22 @@ body .bg-div {
 
 }
 
-.personal-info-box .box-styler .information-grid h2{
-    color: var(--primary-color);
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    text-align: center;
-}
 
 .personal-info-box .information-grid{
     display:flex;
     flex-direction: column;
-    margin-top: 0.2rem;
-}
-
-.personal-info-box .box-styler .aboutme-info{
-    margin-bottom: 0.5rem;
+    margin-top: 3svh;
 }
 
 .personal-info-box .box-styler .information-grid h2{
+    color: var(--primary-color);
+    text-align: center;
     font-size: 2rem;
+    margin-top: 0svh;
+    margin-bottom: 0svh;
+}
+.personal-info-box .box-styler .aboutme-info{
+    margin-bottom: 2svh;
 }
 
 .personal-info-box .box-styler .aboutme-info p{
@@ -468,12 +468,16 @@ body .bg-div {
     animation: neon 3s infinite;
 }
 .home-container h1{
-    margin-top: 35px;
+    margin-top: 8svh;
     width: 75%;
     text-transform: uppercase;
-    font-size: 3svh;
+    font-size: 3svw;
     font-family: "Archivo Black", "Archivo", sans-serif;
     text-align: center;
+}
+
+.home-container .subtitle{
+    margin-top: 0svh;
 }
 
 .bubbles-container{
@@ -909,7 +913,6 @@ body .bg-div {
 
 }
 
-
 /* media query for wide dispositives less than 700px of width */
 
 @media (max-width: 930px){
@@ -925,11 +928,17 @@ body .bg-div {
     
     .nav-container .nav-hamburger-box{
         display: block;
+        width: 6svh;
+        height: 6svh;
+    }
+
+    .nav-container .hamburger-line{
+        height: 0.7svh;
     }
 
     .nav-container .nav-links-box li a{
-        padding-inline-end: 0px;
-    }
+    padding-inline-end: 2.5svw;
+}
     
     .nav-container .hamburger-menu.active{
         position: absolute;
@@ -1033,12 +1042,6 @@ body .bg-div {
         font-size: 2svh;
     }
 
-    .personal-info-box .box-styler .personal-title h3{
-        color: var(--alt-text);
-        font-size: 1.2rem;
-        margin: 1svw;
-    }
-
     .nav-container .dark-mode-container .dark-mode-box{
         height: 3svh;
         width: 5.2941svh;
@@ -1117,3 +1120,14 @@ body .bg-div {
         font-size: 1.8svh;
     }
 }
+
+/* media query for low length and ultra wide dispositives */
+    @media (min-aspect-ratio: 2/1) {
+        .nav-container .nav-hamburger-box {
+            display: none;
+        }
+
+        .nav-container .hamburger-menu .nav-links-box {
+            display: flex;
+        }
+    }
