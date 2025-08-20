@@ -88,8 +88,10 @@ body .bg-div {
   left: -2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
-  -webkit-filter: blur(5px);
+-webkit-filter: blur(5px); /* legacy WebKit */
+  filter: blur(5px); /* fall back to blur */
+  will-change: transform, filter; /* help mobile compositing */
+  pointer-events: none;
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing-button-85 20s linear infinite;
