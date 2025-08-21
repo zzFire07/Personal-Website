@@ -465,12 +465,19 @@ body .bg-div {
 
 
 .home{
+    position: relative;
+    isolation: isolate;
     display: flex;
     flex-direction: row;
-    height: 100dvh;
     background-color: var(--primary-background);
     box-sizing: border-box;
-    min-height: 660px;
+}
+
+@supports (height: 100lvh) {
+  .home{ min-height: 100lvh; }
+}
+@supports not (height: 100lvh) {
+  .home{ min-height: 100dvh; } /* fallback dinámico */
 }
 
 .home-container{
@@ -497,10 +504,12 @@ body .bg-div {
 
 .bubbles-container{
     position: absolute;
+    inset: 0;
     display: flex;
     justify-content: space-around;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
     overflow: hidden;
 }
 
