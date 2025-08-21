@@ -74,11 +74,12 @@ section .home {
     border: 0.3rem solid var(--terciary-background_inverted);
     background-color: var(--secondary-background);
     border-radius: 4dvh;
-    padding-left: 2rem;
+    padding-left: 2.9dvh;
+    cursor: pointer;
 }
 
 .home .blog-post .thumb {
-    inline-size: 30dvw;
+    inline-size: 24dvw;
     aspect-ratio: 1 / 1;
     border-radius: 4dvh;
     overflow: hidden;
@@ -91,4 +92,11 @@ section .home {
     height: 100%;
     object-fit: cover;
     display: block;
+}
+
+.home .blog-post h3 {
+    width: 52dvw;
+    margin-left: 2dvw;
+    font-size: 3rem;
+    color: var(--alt-text)
 }
