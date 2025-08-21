@@ -56,8 +56,6 @@ body{
 
 body .bg-div {
     width: 100%;
-    padding-inline-start: max(env(safe-area-inset-left));
-    padding-inline-end:   max(env(safe-area-inset-right));
     overflow: visible;
 }
 
