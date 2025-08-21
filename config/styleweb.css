@@ -34,20 +34,31 @@
     --shadow-color-light: white;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--primary-background);
+}
+
 
 body{
-    min-height: 100svh;
-    min-width: 100svw;
-    display: contents;
+    min-height: 100vh;
+    min-height: 100dvh;
     float: none!important;
-    margin: 0vh auto!important;
+    padding: env(safe-area-inset-top)
+         env(safe-area-inset-right)
+         env(safe-area-inset-bottom)
+         env(safe-area-inset-left);
     background-color: var(--primary-background);
     --nav_title-font: Lobster;
 }
 
+@supports not (height: 100dvh) {
+  body { min-height: 100vh; }
+}
+
 body .bg-div {
     width: 100%;
-    min-width: 330px;
     overflow:hidden;
 }
 
