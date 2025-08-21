@@ -361,7 +361,6 @@ body .bg-div {
     flex-direction: column;
     width: 30%;
     margin-left: 1%;
-    margin-top: 40px;
     z-index: 100;
     transition: 0.02s;
 }
