@@ -66,9 +66,9 @@ var colorSwitch; // Variable para el interruptor DARK MODE
   var scrollPosition = window.scrollY; // Obtiene la posicion del scroll
 
 if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la distancia maxima, se mueve la caja
-  personalBox.style.paddingTop = scrollPosition + 'px';
+  personalBox.style.marginTop = scrollPosition + 'px';
 } else {  // Si la posicion del scroll es mayor a la distancia maxima, se fija la caja en la distancia maxima
-  personalBox.style.paddingTop = maxOffset + 'px';
+  personalBox.style.marginTop = maxOffset + 'px';
 }
 }
 
