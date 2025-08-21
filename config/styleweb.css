@@ -64,7 +64,7 @@ body .bg-div {
 
 /* CSS */
 .button-85 {
-  margin-top: 8svh;
+  margin-top: 8dvh;
   padding: 0.6em 2em;
   font: 22px "Archivo Black", sans-serif;
   border: none;
@@ -136,14 +136,14 @@ body .bg-div {
 
 .nav-hamburger-box {
     position: relative;
-    width: 6svh;
-    height: 6svh;
+    width: 6dvh;
+    height: 6dvh;
     cursor: pointer;
     display: none;
 }
 
 .hamburger-line{
-    height: 0.7svh;
+    height: 0.7dvh;
     width: 100%;
     background-color: var(--primary-color);
     border-radius: 25px;
@@ -192,7 +192,7 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     white-space: nowrap;
-    height: 8svh;
+    height: 8dvh;
     background-color: var(--secondary-background);
     font-size: 1vw;
     z-index: 101;
@@ -203,18 +203,17 @@ body .bg-div {
     flex-direction: row;
     align-items: center;
     height: 100%;
-    margin-left: 0.5svw;
-    margin-right: 2svw;
+    margin-left: 0.5dvw;
 }
 
 .nav-container .icon-family h1{
     font-family: var(--nav_title-font);
     text-decoration: none;
-    font-size: 5.5svh;
+    font-size: 5.5dvh;
     margin-top: 0;
     margin-bottom: 0;
-    margin-inline-start: 1.4svh;
-    margin-inline-end: 1.4svh;
+    margin-inline-start: 1.4dvh;
+    margin-inline-end: 1.4dvh;
     color: var(--primary-color);
 }
 .nav-container .icon-family a{
@@ -251,7 +250,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 3.5svh;
+    font-size: 3.5dvh;
     margin: 0px;
     padding-inline-start: 0px;
     list-style-type: none;
@@ -259,7 +258,7 @@ body .bg-div {
 
 .nav-container .nav-links-box li a{
     text-decoration: none;
-    padding-inline-end: 3svw;
+    padding-inline-end: 3dvw;
     color:var(--secondary-color);
 }
 
@@ -267,9 +266,9 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 2svh;
+    font-size: 2dvh;
     margin-left: auto;
-    margin-right: 2svw;
+    margin-right: 2dvw;
 }
 
 .nav-container .dark-mode-container p{
@@ -278,8 +277,8 @@ body .bg-div {
 }
 
 .nav-container .dark-mode-container .dark-mode-box{
-    height: 4svh;
-    width: 7.0588svh;
+    height: 4dvh;
+    width: 7.0588dvh;
     position: relative;
 }
 
@@ -290,8 +289,8 @@ body .bg-div {
 .dark-mode-box .slider{
     position: absolute;
     cursor: pointer;
-    height: 4svh;
-    width: 7.0588svh;
+    height: 4dvh;
+    width: 7.0588dvh;
     top: 0;
     left: 0;
     right: 0;
@@ -304,10 +303,10 @@ body .bg-div {
 .dark-mode-box .slider:before{
     position: absolute;
     content: "";
-    width: 3.0588svh;
-    height: 3.0588svh;
-    left: 0.470584svh;
-    bottom: 0.470584svh;
+    width: 3.0588dvh;
+    height: 3.0588dvh;
+    left: 0.470584dvh;
+    bottom: 0.470584dvh;
     background-color:#e4b90f;
     -webkit-transition: .4s;
     transition: .4s;
@@ -315,11 +314,11 @@ body .bg-div {
 
 
 .dark-mode-box .set-dark-mode:checked + .slider:before{
-    -webkit-transform: translate(2.5588svh, -0.5svh);
-    -ms-transform: translate(2.5588svh, -0.5svh);
-    transform: translate(2.5588svh, -0.5svh);
+    -webkit-transform: translate(2.5588dvh, -0.5dvh);
+    -ms-transform: translate(2.5588dvh, -0.5dvh);
+    transform: translate(2.5588dvh, -0.5dvh);
     background-color: transparent;
-    box-shadow: 0.5svh 0.5svh 0 0 darkgrey;
+    box-shadow: 0.5dvh 0.5dvh 0 0 darkgrey;
 }
 
 .dark-mode-box .set-dark-mode:not(:checked) + .slider:before{
@@ -328,18 +327,18 @@ body .bg-div {
 
 @keyframes shine {
     0% {
-        box-shadow: 0 0 1rem 0.5svh #e4b90f;
+        box-shadow: 0 0 1rem 0.5dvh #e4b90f;
     }
     50% {
-        box-shadow: 0 0 1rem 1svh #e4b90f;
+        box-shadow: 0 0 1rem 1dvh #e4b90f;
     }
     100% {
-        box-shadow: 0 0 1rem 0.5svh #e4b90f;
+        box-shadow: 0 0 1rem 0.5dvh #e4b90f;
     }
 }
 
 .dark-mode-box .slider.round{
-    border-radius: 4svw;
+    border-radius: 4dvw;
 }
 
 .dark-mode-box .slider.round:before{
@@ -351,7 +350,7 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     padding-bottom: 400;
-    margin-top: 8svh;
+    margin-top: 8dvh;
 }
 
 
@@ -384,16 +383,16 @@ body .bg-div {
 .personal-info-box .box-styler .personal-title h2{
     color: var(--alt-text);
     font-size: 2rem;
-    margin: 1svh;
-    margin-bottom: 0svh;
+    margin: 1dvh;
+    margin-bottom: 0dvh;
 }
 
 .personal-info-box .box-styler .personal-title h3{
     color: var(--alt-text);
     font-size: 1.2rem;
-    margin: 1svw;
-    margin-top: 0svh;
-    margin-bottom: 3svh;
+    margin: 1dvw;
+    margin-top: 0dvh;
+    margin-bottom: 3dvh;
 }
 
 .personal-info-box .box-styler .image-portrait{
@@ -413,18 +412,18 @@ body .bg-div {
 .personal-info-box .information-grid{
     display:flex;
     flex-direction: column;
-    margin-top: 3svh;
+    margin-top: 3dvh;
 }
 
 .personal-info-box .box-styler .information-grid h2{
     color: var(--primary-color);
     text-align: center;
     font-size: 2rem;
-    margin-top: 0svh;
-    margin-bottom: 0svh;
+    margin-top: 0dvh;
+    margin-bottom: 0dvh;
 }
 .personal-info-box .box-styler .aboutme-info{
-    margin-bottom: 2svh;
+    margin-bottom: 2dvh;
 }
 
 .personal-info-box .box-styler .aboutme-info p{
@@ -439,7 +438,7 @@ body .bg-div {
     display: flex;
     flex-direction: column;
     margin: 0px;
-    margin-bottom: 3svh;
+    margin-bottom: 3dvh;
 }
 
 .personal-info-box .information-grid .socialmedia-info img{
@@ -452,7 +451,7 @@ body .bg-div {
     flex-direction: row;
     justify-content: center;
     margin: 0px;
-    padding-bottom: 1svw;
+    padding-bottom: 1dvw;
 }
 .personal-info-box .information-grid .socialmedia-icons a{
     display: flex;
@@ -465,7 +464,7 @@ body .bg-div {
 .home{
     display: flex;
     flex-direction: row;
-    height: 100svh;
+    height: 100dvh;
     background-color: var(--primary-background);
     box-sizing: border-box;
     min-height: 660px;
@@ -481,16 +480,16 @@ body .bg-div {
     animation: neon 3s infinite;
 }
 .home-container h1{
-    margin-top: 8svh;
+    margin-top: 8dvh;
     width: 75%;
     text-transform: uppercase;
-    font-size: 3svw;
+    font-size: 3dvw;
     font-family: "Archivo Black", "Archivo", sans-serif;
     text-align: center;
 }
 
 .home-container .subtitle{
-    margin-top: 0svh;
+    margin-top: 0dvh;
 }
 
 .bubbles-container{
@@ -532,7 +531,7 @@ body .bg-div {
 }
 
 #portfolio-target{
-    height: 6svh;
+    height: 6dvh;
 }
 
 .portfolio .portfolio-container{
@@ -544,10 +543,10 @@ body .bg-div {
 
 .portfolio .portfolio-container h1{
     text-align: center;
-    font-size: 5svw;
+    font-size: 5dvw;
     color: var(--primary-color);
     margin: 20px;
-    margin-bottom: 4svh;
+    margin-bottom: 4dvh;
 }
 
 .portfolio article{
@@ -572,13 +571,13 @@ body .bg-div {
 
 .portfolio article h3{
     font-size: 1.5rem;
-    margin: 2svh 2svw 2svh 2svw;
+    margin: 2dvh 2dvw 2dvh 2dvw;
     color: var(--secondary-color);
 }
 
 .portfolio article h4{
     font-size: 2rem;
-    margin: 2svh 2svw 2svh 2svw;
+    margin: 2dvh 2dvw 2dvh 2dvw;
     color: var(--secondary-color);
 }
 
@@ -591,7 +590,7 @@ body .bg-div {
 }
 
 .portfolio article ul{
-    margin: 4svh 2svw 8svh 2svw;
+    margin: 4dvh 2dvw 8dvh 2dvw;
 }
 
 .portfolio article ul li{
@@ -601,7 +600,7 @@ body .bg-div {
 }
 
 .portfolio article p{
-    margin: 2svh 2svw 2svh 2svw;
+    margin: 2dvh 2dvw 2dvh 2dvw;
     color: var(--secondary-color);
     font-size: 1.5rem;
     text-align: center;
@@ -609,30 +608,30 @@ body .bg-div {
 
 .portfolio .button-see-more-article-1{
     display: flex;
-    margin-left: 2svw;
-    margin-right: 2svw;
-    margin-bottom: 2svh;
+    margin-left: 2dvw;
+    margin-right: 2dvw;
+    margin-bottom: 2dvh;
     width: fit-content;
 }
 
 .portfolio .button-see-more-article-2{
     display: flex;
-    margin-left: 2svw;
-    margin-right: 2svw;
-    margin-bottom: 2svh;
+    margin-left: 2dvw;
+    margin-right: 2dvw;
+    margin-bottom: 2dvh;
     width: fit-content;
 }
 
 .portfolio .button-see-more-article-3{
     display: flex;
-    margin-left: 2svw;
-    margin-right: 2svw;
-    margin-bottom: 2svh;
+    margin-left: 2dvw;
+    margin-right: 2dvw;
+    margin-bottom: 2dvh;
     width: fit-content;
 }
 
 .portfolio .button-see-more-article-1 p{
-    font-size: 3svh;
+    font-size: 3dvh;
     cursor: pointer;
     width: auto;
     border: 2px solid var(--secondary-color);
@@ -640,7 +639,7 @@ body .bg-div {
 }
 
 .portfolio .button-see-more-article-2 p{
-    font-size: 3svh;
+    font-size: 3dvh;
     cursor: pointer;
     width: auto;
     border: 2px solid var(--secondary-color);
@@ -648,7 +647,7 @@ body .bg-div {
 }
 
 .portfolio .button-see-more-article-3 p{
-    font-size: 3svh;
+    font-size: 3dvh;
     cursor: pointer;
     width: auto;
     border: 2px solid var(--secondary-color);
@@ -671,7 +670,7 @@ body .bg-div {
     display: block;
     background-color: var(--primary-background);
     border: 2px solid var(--secondary-color);
-    margin: 5svh 5svw 5svh 5svw;
+    margin: 5dvh 5dvw 5dvh 5dvw;
     border-radius: 2vh;
 }
 
@@ -679,7 +678,7 @@ body .bg-div {
     display: block;
     background-color: var(--primary-background);
     border: 2px solid var(--secondary-color);
-    margin: 5svh 5svw 5svh 5svw;
+    margin: 5dvh 5dvw 5dvh 5dvw;
     border-radius: 2vh;
 }
 
@@ -687,7 +686,7 @@ body .bg-div {
     display: block;
     background-color: var(--primary-background);
     border: 2px solid var(--secondary-color);
-    margin: 5svh 5svw 5svh 5svw;
+    margin: 5dvh 5dvw 5dvh 5dvw;
     border-radius: 2vh;
 }
 
@@ -695,7 +694,7 @@ body .bg-div {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: 4svh 2svw 8svh 2svw;
+    margin: 4dvh 2dvw 8dvh 2dvw;
 
 }
 
@@ -711,7 +710,7 @@ body .bg-div {
     height: auto;
     width: 75%;
     aspect-ratio: 1/1;
-    margin: 2svh 2svw 2svh 2svw;
+    margin: 2dvh 2dvw 2dvh 2dvw;
 }
 
 .portfolio .links-article .repository-link{
@@ -720,8 +719,8 @@ body .bg-div {
     max-width: 300px;
     align-items: center;
     justify-content: center;
-    border: var(--secondary-color) 0.2svw solid;
-    border-radius: 3svw;
+    border: var(--secondary-color) 0.2dvw solid;
+    border-radius: 3dvw;
 }
 
 .portfolio .links-article .repository-link a p{
@@ -729,7 +728,7 @@ body .bg-div {
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    font-size: 2.5svw;
+    font-size: 2.5dvw;
 }
 
 .portfolio .links-article .web-link a p{
@@ -737,7 +736,7 @@ body .bg-div {
     white-space: normal;
     overflow-wrap: break-word;
     word-wrap: break-word;
-    font-size: 2.5svw;
+    font-size: 2.5dvw;
 }
 
 .portfolio .links-article .web-link{
@@ -746,8 +745,8 @@ body .bg-div {
     max-width: 300px;
     align-items: center;
     justify-content: center;
-    border: var(--secondary-color) 0.2svw solid;
-    border-radius: 3svw;
+    border: var(--secondary-color) 0.2dvw solid;
+    border-radius: 3dvw;
 }
 
 .footer-box{
@@ -757,8 +756,8 @@ body .bg-div {
     height: fit-content;
     background-color: #756e76;
     margin: 0px;
-    padding-top: 1svh;
-    padding-bottom: 1svh;
+    padding-top: 1dvh;
+    padding-bottom: 1dvh;
 }
 
 .footer-box .copyright-text{
@@ -773,7 +772,7 @@ body .bg-div {
 .footer-box .footer-button-box{
     position: static;
     left: 25px;
-    margin-right: 2svw;
+    margin-right: 2dvw;
     
 }
 
@@ -819,11 +818,11 @@ body .bg-div {
 @keyframes animate {
     0%
     {
-        transform: translateY(100svh) scale(0);
+        transform: translateY(100dvh) scale(0);
     }
     100%
     {
-        transform: translateY(-5svh) scale(1);
+        transform: translateY(-5dvh) scale(1);
     }
 }
 
@@ -893,8 +892,8 @@ body .bg-div {
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        top: 8svh;
-        left: 45svw;
+        top: 8dvh;
+        left: 45dvw;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
         border-radius: 10px;
@@ -904,11 +903,11 @@ body .bg-div {
     .nav-container .hamburger-menu.active .nav-links-box{
         display: flex;
         flex-direction: column;
-        font-size: 4.2svh;
+        font-size: 4.2dvh;
     }
     
     .nav-container .hamburger-menu.active .nav-links-box li{
-        margin: 1svh;
+        margin: 1dvh;
     }
     
     .nav-container .hamburger-menu .nav-links-box{
@@ -931,33 +930,33 @@ body .bg-div {
 @media (max-width: 930px){
 
     .tech-grid .left p{
-        font-size: 5.5svw; 
+        font-size: 5.5dvw; 
     }
     .tech-grid .right p{
-        font-size: 5.5svw; 
+        font-size: 5.5dvw; 
     }
     
     /* CSS DEL HAMBURGER MENU */
     
     .nav-container .nav-hamburger-box{
         display: block;
-        width: 6svh;
-        height: 6svh;
+        width: 6dvh;
+        height: 6dvh;
     }
 
     .nav-container .hamburger-line{
-        height: 0.7svh;
+        height: 0.7dvh;
     }
 
     .nav-container .nav-links-box li a{
-    padding-inline-end: 2.5svw;
+    padding-inline-end: 2.5dvw;
 }
     
     .nav-container .hamburger-menu.active{
         position: absolute;
         display: block;
-        top: 8svh;
-        left: 45svw;
+        top: 8dvh;
+        left: 30dvh;
         background-color: var(--primary-background);
         border: var(--button-color) 3px solid;
         border-radius: 10px;
@@ -967,11 +966,11 @@ body .bg-div {
     .nav-container .hamburger-menu.active .nav-links-box{
         display: flex;
         flex-direction: column;
-        font-size: 4.2svh;
+        font-size: 4.2dvh;
     }
     
     .nav-container .hamburger-menu.active .nav-links-box li{
-        margin: 1svh;
+        margin: 1dvh;
     }
     
     .nav-container .hamburger-menu .nav-links-box{
@@ -1007,7 +1006,7 @@ body .bg-div {
     }
 
     .portfolio .portfolio-container h1{
-        font-size: 9svw;
+        font-size: 9dvw;
     }
 }
 
@@ -1018,24 +1017,24 @@ body .bg-div {
     /* CSS DEL NAVBAR */
 
     .wrapper{
-        margin-top: 7svh;
+        margin-top: 7dvh;
     }
 
     .nav-container{
-        height: 7svh;
+        height: 7dvh;
     }
 
     .nav-container .icon-family h1{
-        font-size: 4svh;
+        font-size: 4dvh;
     }
 
     .nav-container .hamburger-menu.active{
-        bottom: -11.8svh;
-        left: 55svw;
+        top: 7dvh;
+        left: 23dvh;
     }
 
     .nav-container .hamburger-menu.active .nav-links-box{
-        font-size: 3svh;
+        font-size: 3dvh;
     }
 
     .personal-info-box{
@@ -1052,20 +1051,20 @@ body .bg-div {
     }
 
     .home-container h1{
-        font-size: 2svh;
+        font-size: 2dvh;
     }
 
     .nav-container .dark-mode-container .dark-mode-box{
-        height: 3svh;
-        width: 5.2941svh;
+        height: 3dvh;
+        width: 5.2941dvh;
         position: relative;
     }
     
     .dark-mode-box .slider{
         position: absolute;
         cursor: pointer;
-        height: 3svh;
-        width: 5.2941svh;
+        height: 3dvh;
+        width: 5.2941dvh;
         top: 0;
         left: 0;
         right: 0;
@@ -1078,21 +1077,21 @@ body .bg-div {
     .dark-mode-box .slider:before{
         position: absolute;
         content: "";
-        width: 2.2941svh;
-        height: 2.2941svh;
-        left: 0.352938svh;
-        bottom: 0.352938svh;
+        width: 2.2941dvh;
+        height: 2.2941dvh;
+        left: 0.352938dvh;
+        bottom: 0.352938dvh;
         background-color:#e4b90f;
         -webkit-transition: .4s;
         transition: .4s;
     }
     
     .dark-mode-box .set-dark-mode:checked + .slider:before{
-        -webkit-transform: translate(1.9191svh, -0.375svh);
-        -ms-transform: translate(1.9191svh, -0.375svh);
-        transform: translate(1.9191svh, -0.375svh);
+        -webkit-transform: translate(1.9191dvh, -0.375dvh);
+        -ms-transform: translate(1.9191dvh, -0.375dvh);
+        transform: translate(1.9191dvh, -0.375dvh);
         background-color: transparent;
-        box-shadow: 0.375svh 0.375svh 0 0 darkgrey;
+        box-shadow: 0.375dvh 0.375dvh 0 0 darkgrey;
     }
     
     .dark-mode-box .set-dark-mode:not(:checked) + .slider:before{
@@ -1101,18 +1100,18 @@ body .bg-div {
     
     @keyframes shine {
         0% {
-            box-shadow: 0 0 1rem 0.375svh #e4b90f;
+            box-shadow: 0 0 1rem 0.375dvh #e4b90f;
         }
         50% {
-            box-shadow: 0 0 1rem 0.75svh #e4b90f;
+            box-shadow: 0 0 1rem 0.75dvh #e4b90f;
         }
         100% {
-            box-shadow: 0 0 1rem 0.375svh #e4b90f;
+            box-shadow: 0 0 1rem 0.375dvh #e4b90f;
         }
     }
     
     .dark-mode-box .slider.round{
-        border-radius: 3svw;
+        border-radius: 3dvw;
     }
     
 
@@ -1126,11 +1125,15 @@ body .bg-div {
     /* CSS DEL NAVBAR */
 
     .nav-container .icon-family h1{
-        font-size: 3svh;
+        font-size: 3dvh;
     }
 
     .home-container h1{
-        font-size: 1.8svh;
+        font-size: 1.8dvh;
+    }
+
+    .nav-container .hamburger-menu.active{
+        left: 18dvh;
     }
 }
 

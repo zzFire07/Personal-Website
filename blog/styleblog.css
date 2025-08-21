@@ -2,69 +2,69 @@ section .home {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100svh;
+    min-height: 100dvh;
     height: auto;
 }
 
 
 .home h1 {
-    font-size: 6svh;
+    font-size: 6dvh;
     font-family: "Bitcount Prop Single";
     color: var(--primary-color);
     text-align: center;
     margin: 0;
-    padding-top: 7svh;
-    padding-bottom: 1.5svh;
-    padding-right: 12svw;
-    padding-left: 12svw;
+    padding-top: 7dvh;
+    padding-bottom: 1.5dvh;
+    padding-right: 12dvw;
+    padding-left: 12dvw;
 }
 
 .home h2 {
-    font-size: 3.5svh;
+    font-size: 3.5dvh;
     font-family: "Bitcount Prop Single";
     font-weight: lighter;
     color: var(--primary-color);
     text-align: center;
     margin: 0;
-    padding-top: 0svh;
-    padding-bottom: 0svh;
-    padding-right: 12svw;
-    padding-left: 12svw;
+    padding-top: 0dvh;
+    padding-bottom: 0dvh;
+    padding-right: 12dvw;
+    padding-left: 12dvw;
 }
 
 .home .blog-container {
     display: flex;
     width: fit-content;
     flex-direction: column;
-    margin-top: 10svh;
-    margin-bottom: 10svh;
-    margin-left: 6svw;
-    margin-right: 6svw;
+    margin-top: 10dvh;
+    margin-bottom: 10dvh;
+    margin-left: 6dvw;
+    margin-right: 6dvw;
     border: 1px solid var(--primary-color);
-    border-radius: 2svw;
+    border-radius: 2dvw;
 }
 
 .home .blog-posts-title {
-    font-size: 5svh;
+    font-size: 5dvh;
     font-family: "Bitcount Prop Single";
     font-weight: lighter;
     color: var(--primary-color);
     text-align: start;
     margin: 0 0 0 0;
-    padding-top: 4svh;
-    padding-bottom: 4svh;
-    padding-left: 3svw;
-    padding-right: 3svw;
+    padding-top: 4dvh;
+    padding-bottom: 4dvh;
+    padding-left: 3dvw;
+    padding-right: 3dvw;
 }
 
 .home .blog-posts {
     display: flex;
     flex-direction: column;
-    gap: 4svh;
-    padding-top: 4svh;
-    padding-bottom: 4svh;
-    padding-left: 3svw;
-    padding-right: 3svw;
+    gap: 4dvh;
+    padding-top: 4dvh;
+    padding-bottom: 4dvh;
+    padding-left: 3dvw;
+    padding-right: 3dvw;
     border-top: 1px solid var(--primary-color);
 }
 
@@ -73,14 +73,14 @@ section .home {
     flex-direction: row;
     border: 0.3rem solid var(--terciary-background_inverted);
     background-color: var(--secondary-background);
-    border-radius: 4svh;
+    border-radius: 4dvh;
     padding-left: 2rem;
 }
 
 .home .blog-post img {
-    margin-top: 2svh;
-    margin-bottom: 2svh;
-    width: 30svw;
+    margin-top: 2dvh;
+    margin-bottom: 2dvh;
+    width: 30dvw;
     object-fit: cover;
     aspect-ratio: 1 / 1;
 }
