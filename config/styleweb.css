@@ -38,6 +38,8 @@ html, body {
   height: 100%;
   margin: 0;
   background: var(--primary-background);
+  overscroll-behavior-y: none;  /* corta el efecto “rubber-band” en iOS 16+ */
+  overflow-x: hidden;           /* evita micro vaivén horizontal por 100vw */
 }
 
 
@@ -50,8 +52,11 @@ body{
     --nav_title-font: Lobster;
 }
 
-@supports not (height: 100dvh) {
-  body { min-height: 100vh; }
+@supports (height: 100lvh) {
+  body .bg-div { min-height: 100lvh; }   /* NO toca el body */
+}
+@supports not (height: 100lvh) {
+  body .bg-div { min-height: 100dvh; }   /* fallback dinámico */
 }
 
 body .bg-div {
