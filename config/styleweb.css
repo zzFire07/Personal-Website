@@ -785,7 +785,7 @@ body .bg-div {
     background-color: var(--button-color);
     border-radius: 10px;
     cursor: pointer;
-
+    margin-right: max(env(safe-area-inset-right));
 }
 
 .section-separator{
