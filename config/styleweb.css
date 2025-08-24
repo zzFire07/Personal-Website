@@ -16,7 +16,7 @@
     --button-text: #FAD6A5;
     --alt-text: #bb4c07;
     --shadow-color: #FFB0A0;
-    --shadow-color-light: white;
+    --creative-text: #D7FFF3;
 }
 
 [tema="dark"]{
@@ -31,7 +31,7 @@
     --button-text: #121212;
     --alt-text: #FFD700;
     --shadow-color: #007373;
-    --shadow-color-light: white;
+    --creative-text: #FFEDE6;
 }
 
 html, body {
