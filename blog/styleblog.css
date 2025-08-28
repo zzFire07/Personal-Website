@@ -7,44 +7,40 @@ section .home {
 }
 
 .home .sticker {
-    display: flex;
     position: fixed;
-    justify-content: center;
-    align-items: center;
-    inline-size: 16%;
+    top: 20dvh;
+    left: 3dvw;              /* siempre anclado a la izquierda */
+    width: 16%;
     z-index: 2;
-    transition: all 0.3s ease-in-out;
+    display: grid;           /* apila las dos imágenes */
+    transform: translateX(var(--shift, 0));
+    transition: transform 0.4s ease, opacity 0.25s ease;
 }
 
-.home .sticker .sticker-pink{
-    display: none;
+.home .sticker img {
+    width: 100%;
+    height: auto;
+    grid-area: 1 / 1;        /* ambas imágenes en la misma celda */
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
 }
 
+/* modo claro → se corre a la derecha y se ve el rosa */
 html[tema="light"] .home .sticker {
-    top: 12dvh;
-    right: 3dvw;
+    --shift: calc(100dvw - 7dvw - 16dvw);
 }
+html[tema="light"] .home .sticker .sticker-pink { opacity: 1; }
+html[tema="light"] .home .sticker .sticker-blue { opacity: 0; }
 
+/* modo oscuro → se queda a la izquierda y se ve el azul */
 html[tema="dark"] .home .sticker {
-    top: 12dvh;
-    left: 3dvw;
+    --shift: 0;
 }
+html[tema="dark"] .home .sticker .sticker-pink { opacity: 0; }
+html[tema="dark"] .home .sticker .sticker-blue { opacity: 1; }
 
-html[tema="light"] .home .sticker .sticker-blue{
-    display: none;
-}
-
-html[tema="light"] .home .sticker .sticker-pink{
-    display: block;
-}
-
-html[tema="dark"] .home .sticker .sticker-pink{
-    display: none;
-}
-
-html[tema="dark"] .home .sticker .sticker-blue{
-    display: block;
-}
 
 .home h1 {
     font-size: 6dvh;
