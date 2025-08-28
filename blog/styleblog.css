@@ -21,12 +21,12 @@ section .home {
 }
 
 html[tema="light"] .home .sticker {
-    top: 30dvh;
+    top: 12dvh;
     right: 3dvw;
 }
 
 html[tema="dark"] .home .sticker {
-    top: 30dvh;
+    top: 12dvh;
     left: 3dvw;
 }
 
