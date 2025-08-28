@@ -6,6 +6,45 @@ section .home {
     height: auto;
 }
 
+.home .sticker {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    inline-size: 16%;
+    z-index: 2;
+    transition: all 0.3s ease-in-out;
+}
+
+.home .sticker .sticker-pink{
+    display: none;
+}
+
+html[tema="light"] .home .sticker {
+    top: 30dvh;
+    right: 3dvw;
+}
+
+html[tema="dark"] .home .sticker {
+    top: 30dvh;
+    left: 3dvw;
+}
+
+html[tema="light"] .home .sticker .sticker-blue{
+    display: none;
+}
+
+html[tema="light"] .home .sticker .sticker-pink{
+    display: block;
+}
+
+html[tema="dark"] .home .sticker .sticker-pink{
+    display: none;
+}
+
+html[tema="dark"] .home .sticker .sticker-blue{
+    display: block;
+}
 
 .home h1 {
     font-size: 6dvh;
