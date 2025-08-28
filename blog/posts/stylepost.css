@@ -9,7 +9,7 @@
     color: var(--primary-color);
     text-align: center;
     margin: 0;
-    padding-top: 7dvh;
+    padding-top: 3dvh;
     padding-bottom: 1.5dvh;
     padding-right: 12dvw;
     padding-left: 12dvw;
@@ -21,6 +21,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 6dvh;
+    margin-bottom: 10dvh;
 }
 
 .home .post-content h2 {
@@ -38,6 +39,7 @@
 .home .post-content p {
     font-size: 2dvh;
     color: var(--creative-text);
+    line-height: 1.6;
     text-align: justify;
     margin: 0;
     padding-top: 0dvh;
