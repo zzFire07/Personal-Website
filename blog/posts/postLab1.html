@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="../../config/styleweb.css">
         <link rel="stylesheet" href="./stylepost.css">
 
-        <script type="text/javascript" src="../script.js"></script>
+        <script type="text/javascript" src="../script.js" defer></script>
+        <script type="text/javascript" src="./script.js" defer></script>
 
 
         <meta name="author" content="Giorgio Santi aka zzF"/>
@@ -54,7 +55,7 @@
                     <div class="post-content">
                         <div class="class-activities">
                             <h2> Class activities: </h2>
-                            <p> In today’s Creativity Lab we began with an abstract self-portrait—not a likeness but a visual metaphor of my inner landscape, using symbols to represent values, energy, and quirks. Our professor then introduced divergent and lateral thinking and led two imagination drills. First, we examined a closed briefcase and each proposed what could be inside, sharing wildly different possibilities to stretch our option space. Next, we observed an object hidden under a blanket and, relying only on its silhouette and size, invented a short story about it—fantastical explanations welcome. We finished in groups of four, blending our narratives and negotiating one coherent plot that captured the strongest elements from everyone’s ideas.</p>
+                            <p> In today’s Creativity Lab we began with an abstract self-portrait - not a likeness but a visual metaphor of my inner landscape, using symbols to represent values, energy, and quirks. Our professor then introduced divergent and lateral thinking and led two imagination drills. First, we examined a closed briefcase and each proposed what could be inside, sharing wildly different possibilities to stretch our option space. Next, we observed an object hidden under a blanket and, relying only on its silhouette and size, invented a short story about it - fantastical explanations welcome. We finished in groups of four, blending our narratives and negotiating one coherent plot that captured the strongest elements from everyone’s ideas.</p>
                         </div>
                         <div class="personal-reflection">
                             <h2> Personal reflection: </h2>
@@ -64,6 +65,12 @@
                             <h2> Personal application: </h2>
                             <p> This week I’ll inject divergent and lateral thinking into my software work. Before choosing an approach, I’ll time-box 8–10 minutes to sketch at least six alternative designs (data model, API shape, or failure strategy) plus one deliberately “impossible” option to provoke new angles. I’ll document the top three with quick pros/cons, then commit to one and note the key assumption to test. For lateral leaps, I’ll borrow metaphors from non-tech domains (ecosystems, traffic) when naming modules. I’ll measure success by fewer PR reworks, clearer rationale in commit messages, and at least one teammate noting novelty in review. I’ll also keep a one-line daily “briefcase prompt” to maintain creative fluency.</p>
                         </div>
+                    </div>
+                    <div class="audio-player">
+                        <button id="play-pause">►</button>
+                        <input type="range" id="progress" value="0" step="1">
+                        <span id="time">0:00</span>
+                        <audio id="audio" src="../assets/UPAF.mp3"></audio>
                     </div>
                 </section>
             </section>

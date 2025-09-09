@@ -11,7 +11,8 @@
         <link rel="stylesheet" href="../../config/styleweb.css">
         <link rel="stylesheet" href="./stylepost.css">
 
-        <script type="text/javascript" src="../script.js"></script>
+        <script type="text/javascript" src="../script.js" defer></script>
+        <script type="text/javascript" src="./script.js" defer></script>
 
 
         <meta name="author" content="Giorgio Santi aka zzF"/>
@@ -97,6 +98,12 @@
                                 exercise rather than my initial instinct.
                             </p>
                         </div>
+                    </div>
+                    <div class="audio-player">
+                        <button id="play-pause">►</button>
+                        <input type="range" id="progress" value="0" step="1">
+                        <span id="time">0:00</span>
+                        <audio id="audio" src="../assets/EPDA.mp3"></audio>
                     </div>
                 </section>
             </section>
