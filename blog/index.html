@@ -7,6 +7,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <script>
+            (function () {
+            try {
+                var t = localStorage.getItem('tema');
+                if (!t) {
+                t = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+                }
+                document.documentElement.setAttribute('tema', t);
+            } catch (e) {
+                // Si localStorage falla, no rompas el render
+            }
+            })();
+        </script>
         <link rel="stylesheet" href="../config/normalize.css">
         <link rel="stylesheet" href="../config/styleweb.css">
         <link rel="stylesheet" href="./styleblog.css">
