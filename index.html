@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" tema="light">
     <head>
-        <title>Giorgio DevSpace</title>
-        <link rel="icon" href="assets/favicon.webp" type="image/png"> 
+        <title>Giorgio Santi | Software Engineer & Full-Stack Developer</title>
+        <link rel="icon" href="assets/favicon.webp" type="image/png">
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="theme-color" content="#1E3A3A">
+        <meta name="robots" content="index, follow, max-image-preview:large">
+        <meta name="author" content="Giorgio Santi aka zzF"/>
+        <meta name="description" content="Software engineer and full-stack developer building thoughtful digital products, creative projects, and practical web experiences."/>
+        <meta name="keywords" content="Giorgio Santi, software engineer, full-stack developer, portfolio, Uruguay, web development, Python, React, JavaScript">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Giorgio Santi | Software Engineer & Full-Stack Developer">
+        <meta property="og:description" content="Explore Giorgio Santi's portfolio, projects, and thoughts on technology and creativity.">
+        <meta property="og:image" content="https://personal-website-kappa-ten-91.vercel.app/assets/gio.webp">
+        <meta property="og:url" content="https://personal-website-kappa-ten-91.vercel.app/">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Giorgio Santi | Software Engineer & Full-Stack Developer">
+        <meta name="twitter:description" content="Software engineer and full-stack developer building thoughtful digital products, creative projects, and practical web experiences.">
+        <link rel="canonical" href="https://personal-website-kappa-ten-91.vercel.app/">
 
         <script>
             (function () {
@@ -24,26 +38,35 @@
         <link rel="stylesheet" href="config/styleweb.css">
 
         <script type="text/javascript" src="config/script.js" defer></script>
-
-
-
-        <meta name="author" content="Giorgio Santi aka zzF"/>
-        <meta name="description" content="My biography, portfolio and experience of my career."/>
-        <meta name="keywords" content="develop, development, portfolio, software, fullstack, apps"/>
-
+        <script type="text/javascript" src="config/enhancements.js" defer></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Bitcount+Prop+Single&family=Lobster&family=Archivo+Black&display=swap" rel="stylesheet">
+
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "Giorgio Santi",
+          "jobTitle": "Software Engineer",
+          "url": "https://personal-website-kappa-ten-91.vercel.app/",
+          "sameAs": [
+            "https://www.linkedin.com/in/giorgio-santi-dev/",
+            "https://github.com/zzFire07"
+          ],
+          "description": "Software engineer and full-stack developer creating thoughtful digital products and creative web experiences."
+        }
+        </script>
     </head>
     <body>
         <div class="bg-div" id="home">
 
             <header class="nav-header">
-                <nav class="nav-container">
+                <nav class="nav-container" aria-label="Main navigation">
                     <div class="icon-family">
                             <div class="house-icon">
-                                <a href="#home">
+                                <a href="#home" aria-label="Go to home section">
                                     <img src="assets/favicon.webp" alt="Universe icon">
                                 </a>
                             </div>
@@ -51,11 +74,11 @@
                                 <h1>Web Portfolio</h1>
                             </a>
                         </div>
-                    <div class="nav-hamburger-box">
+                    <button class="nav-hamburger-box" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
                         <span class="hamburger-line"></span>
-                    </div>
+                    </button>
                     <div class="hamburger-menu">
                         <ul class="nav-links-box">
                             <li><a class="linkbox" href="#portfolio-target">Projects</a></li>
@@ -64,8 +87,8 @@
                         </ul>
                     </div>
                     <div class="dark-mode-container">
-                        <label class="dark-mode-box">
-                            <input type="checkbox" class="set-dark-mode">
+                        <label class="dark-mode-box" for="theme-toggle">
+                            <input id="theme-toggle" type="checkbox" class="set-dark-mode" aria-label="Toggle dark mode">
                             <span class="slider round">
                                 <div></div>
                             </span>
@@ -73,6 +96,7 @@
                     </div>
                 </nav>
             </header>
+            <main id="main-content">
             <section class="wrapper">
                 <section class="home">
                     <aside class="personal-info-box">
@@ -98,10 +122,10 @@
                                 <div class="socialmedia-info">
                                     <h2>Social Media</h2>
                                     <div class="socialmedia-icons">
-                                        <a href="https://www.linkedin.com/in/giorgio-santi-dev/" target="_blank">
+                                        <a href="https://www.linkedin.com/in/giorgio-santi-dev/" target="_blank" rel="noopener noreferrer">
                                             <img src="assets/linkedin-icon.webp" alt="Icono de Linkedin">
                                         </a>
-                                        <a href="https://www.github.com/zzFire07" target="_blank">
+                                        <a href="https://www.github.com/zzFire07" target="_blank" rel="noopener noreferrer">
                                             <img src="assets/github-icon.webp" alt="Icono de Github">
                                         </a>
                                     </div>
@@ -150,9 +174,7 @@
                         Code detailist and team player
                         </h1>
                         <div>
-                            <a href="https://docs.google.com/document/d/19Qi7czcArf-J6NvXeF8Hr8zrfIsfv1qm/edit?usp=sharing&ouid=112374801161982474478&rtpof=true&sd=true" target="_blank">
-                                <button class="button-85" role="button">Look my CV</button>
-                            </a>
+                            <a class="button-85" href="https://docs.google.com/document/d/19Qi7czcArf-J6NvXeF8Hr8zrfIsfv1qm/edit?usp=sharing&ouid=112374801161982474478&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">Look my CV</a>
                         </div>
                     </div>
                 </section>
@@ -283,16 +305,14 @@
             <footer class="footer-box" id="footer">
                 <div class="copyright-text">
                     <p>
-                        All rights reserved. 2023-2025.
-                        Author: Giorgio Santi.
+                        © 2023-2026 Giorgio Santi. All rights reserved.
                     </p>
                 </div>
                 <div class="footer-button-box">
-                    <a href="mailto:giorgio.san007@gmail.com">
-                        <button class="footer-button">Contact me</button>
-                    </a>
+                    <a href="mailto:giorgio.san007@gmail.com" class="footer-button">Contact me</a>
                 </div>
             </footer>
+            </main>
         </div>
     </body>
 </html>

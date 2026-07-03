@@ -43,8 +43,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   sectionSeparator = document.querySelectorAll('.section-scroll-progress'); // Selecciono todos los separadores de secciones
   window.addEventListener('scroll', movimientoSectionSeparator) // utilizo la funcion de movimiento junto con el scroll de la pagina
-
-  hamburgerBox.addEventListener('click', activarHamburgesa ); // Si se presiona el boton de menu hamburguesa, se cambia la clase del menu
 })
 
 var colorSwitch; // Variable para el interruptor DARK MODE
@@ -95,14 +93,18 @@ if (scrollPosition <= maxOffset) { // Si la posicion del scroll es menor a la di
   }
 
   function activarHamburgesa() {
-    hamburgerMenu.classList.toggle('active');
-    hamburgerBox.classList.toggle('active');
+    if (!hamburgerMenu || !hamburgerBox) return;
+    const isActive = hamburgerMenu.classList.toggle('active');
+    hamburgerBox.classList.toggle('active', isActive);
+    hamburgerBox.setAttribute('aria-expanded', isActive ? 'true' : 'false');
   }
 
   // Esta funcion cierra el menu hamburguesa al hacer click en un link
   function cerrarHamburguesa() {
+    if (!hamburgerMenu || !hamburgerBox) return;
     hamburgerMenu.classList.remove('active');
     hamburgerBox.classList.remove('active');
+    hamburgerBox.setAttribute('aria-expanded', 'false');
   }
   
   // Esta funcion muestra mas articulos al hacer click en un boton

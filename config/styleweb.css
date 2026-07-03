@@ -4,6 +4,10 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+body a {
+    transition: color 0.2s ease-in-out, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
 :root{
     --primary-color: #FAD6A5;
     --secondary-color: #CFB997;
@@ -34,21 +38,33 @@
     --creative-text: #FFEDE6;
 }
 
-html, body {
+html {
   margin: 0;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: var(--primary-background);
-  overscroll-behavior-y: none;  /* corta el efecto “rubber-band” en iOS 16+ */
-  overflow-x: hidden;           /* evita micro vaivén horizontal por 100vw */
 }
 
-
-body{
-    min-height: 100vh;
+body {
+    margin: 0;
+    min-height: 100%;
     min-height: 100dvh;
     float: none!important;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
     background-color: var(--primary-background);
     --nav_title-font: Lobster;
+}
+
+main,
+section,
+article,
+aside,
+header,
+footer {
+    max-width: 100%;
 }
 
 @supports (height: 100lvh) {
@@ -60,7 +76,9 @@ body{
 
 body .bg-div {
     width: 100%;
+    min-height: 100%;
     overflow: visible;
+    overflow-y: auto;
 }
 
 /* CSS */
@@ -141,6 +159,9 @@ body .bg-div {
     height: 6dvh;
     cursor: pointer;
     display: none;
+    border: none;
+    background: transparent;
+    padding: 0;
 }
 
 .hamburger-line{
@@ -261,6 +282,12 @@ body .bg-div {
     text-decoration: none;
     padding-inline-end: 3dvw;
     color:var(--secondary-color);
+}
+
+.nav-container .nav-links-box li a:hover,
+.nav-container .nav-links-box li a:focus-visible {
+    color: var(--primary-color);
+    opacity: 0.9;
 }
 
 .nav-container .dark-mode-container{
@@ -443,20 +470,26 @@ body .bg-div {
 }
 
 .personal-info-box .information-grid .socialmedia-info img{
-    width: 25%;
-    aspect-ratio: 1/1;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    object-fit: contain;
+    display: block;
 }
 
 .personal-info-box .information-grid .socialmedia-icons{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
     margin: 0px;
     padding-bottom: 1dvw;
 }
 .personal-info-box .information-grid .socialmedia-icons a{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -575,6 +608,11 @@ body .bg-div {
     margin: 20px;
     width: 85%;
     min-height: 250px;
+}
+
+.portfolio article:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.18);
 }
 
 .portfolio article a{
@@ -800,12 +838,17 @@ body .bg-div {
 }
 
 .footer-box .footer-button-box .footer-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     height: auto;
     color: var(--button-text);
     background-color: var(--button-color);
     border-radius: 10px;
     cursor: pointer;
     margin-right: max(env(safe-area-inset-right));
+    text-align: center;
+    padding: 0.6rem 1rem;
 }
 
 .section-separator{
