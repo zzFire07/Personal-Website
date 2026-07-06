@@ -40,6 +40,7 @@ body a {
 
 html {
   margin: 0;
+  width: 100%;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -48,6 +49,7 @@ html {
 
 body {
     margin: 0;
+    width: 100%;
     min-height: 100%;
     min-height: 100dvh;
     float: none!important;
@@ -77,7 +79,7 @@ footer {
 body .bg-div {
     width: 100%;
     min-height: 100%;
-    overflow: visible;
+    overflow-x: hidden;
     overflow-y: auto;
 }
 
@@ -557,21 +559,24 @@ body .bg-div {
     inset: 0;
     display: flex;
     justify-content: space-around;
-    width: auto;
+    width: 100%;
+    max-width: 100%;
     height: auto;
     z-index: -1;
     overflow: hidden;
+    pointer-events: none;
 }
 
 .bubbles-container span{
     position: relative;
-    width: 25px;
-    min-width: 25px;
-    height: 25px;
-    min-height: 25px;
+    width: clamp(16px, 2vw, 25px);
+    min-width: clamp(16px, 2vw, 25px);
+    height: clamp(16px, 2vw, 25px);
+    min-height: clamp(16px, 2vw, 25px);
     overflow: hidden;
     background: aqua;
-    margin: 0 6px;
+    margin: 0 2px;
+    flex-shrink: 0;
     border-radius: 50%;
     box-shadow: 0 0 9px 9px #A5D6FA,
     0 0 40px #6ac9f2, 0 0 100px #6ac9f2;
@@ -824,6 +829,8 @@ body .bg-div {
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+    width: 100%;
+    box-sizing: border-box;
     height: fit-content;
     background-color: #756e76;
     margin: 0px;
@@ -832,7 +839,8 @@ body .bg-div {
 
 .footer-box .copyright-text{
     display: flex;
-    width: 100%;
+    width: auto;
+    min-width: 0;
     max-width: 100%;
     height: 100%;
     align-items: center;
@@ -843,9 +851,7 @@ body .bg-div {
 
 .footer-box .footer-button-box{
     position: static;
-    left: 25px;
-    margin-right: 2dvw;
-    
+    margin-right: 0;
 }
 
 .footer-box .footer-button-box a{
@@ -862,7 +868,7 @@ body .bg-div {
     background-color: var(--button-color);
     border-radius: 10px;
     cursor: pointer;
-    margin-right: max(env(safe-area-inset-right));
+    margin-right: 0;
     text-align: center;
     padding: 0.6rem 1rem;
 }
